@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Macro para adicionar sensores -->
+  <xacro:macro name="sensor_macro" params="sensor_name sensor_x sensor_y sensor_z">
+    <link name="${sensor_name}">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <!-- Use cylinder for LIDAR, box for others -->
+          <xacro:if value="${sensor_name == 'lidar_link'}">
+            <cylinder length="0.03" radius="0.03"/>
+          </xacro:if>
+          <xacro:unless value="${sensor_name == 'lidar_link'}">
+            <box size="0.1 0.1 0.1"/>
+          </xacro:unless>
+        </geometry>
+        <material name="${sensor_name}_color">
+          <color rgba="1 0 1 1"/>
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <xacro:if value="${sensor_name == 'lidar_link'}">
+            <cylinder length="0.03" radius="0.03"/>
+          </xacro:if>
+          <xacro:unless value="${sensor_name == 'lidar_link'}">
+            <box size="0.1 0.1 0.1"/>
+          </xacro:unless>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.1"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+    </link>
+
+    <joint name="${sensor_name}_joint" type="fixed">
+      <origin xyz="${sensor_x} ${sensor_y} ${sensor_z}" rpy="0 0 0"/>
+      <parent link="chassis"/>
+      <child link="${sensor_name}"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- Plugins para os Sensores -->
+  <!-- IMU -->
+  <gazebo reference="imu_link">
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>30</update_rate>
+      <visualize>true</visualize>
+      <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+        <initial_orientation_as_reference>false</initial_orientation_as_reference>
+        <frame_name>imu_link</frame_name>
+        <topic_name>imu/data</topic_name>
+        <gaussian_noise>0.0</gaussian_noise>
+        <xyz_offset>0 0 0</xyz_offset>
+        <rpy_offset>0 0 0</rpy_offset>
+        <update_rate>100</update_rate>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- LIDAR -->
+  <gazebo reference="lidar_link">
+    <sensor name="laser" type="ray">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>10</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <min_angle>-3.14</min_angle>
+            <max_angle>3.14</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.3</min>
+          <max>12</max>
+        </range>
+      </ray>
+      <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
+        <ros>
+          <argument>~/out:=scan</argument>
+        </ros>
+        <output_type>sensor_msgs/LaserScan</output_type>
+        <frame_name>lidar_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- Camera -->
+  <gazebo reference="camera_link">
+    <sensor name="camera_sensor" type="camera">
+      <update_rate>15</update_rate>
+      <camera>
+        <horizontal_fov>1.57</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <always_on>true</always_on>
+        <update_rate>15</update_rate>
+        <camera_name>camera</camera_name>
+        <frame_name>camera_link</frame_name>
+        <image_topic>/camera/image_raw</image_topic>
+        <camera_info_topic>/camera/camera_info</camera_info_topic>
+      </plugin>
+    </sensor>
+  </gazebo>
+</robot>

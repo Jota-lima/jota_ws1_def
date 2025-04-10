@@ -1,0 +1,9 @@
+# Goal
+float32 angle_degrees
+---
+# Result
+bool success
+float32 final_angle
+---
+# Feedback
+float32 remaining_degrees
