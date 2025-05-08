@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/rm_navigator/rm_navigator.egg-info
+writing ../../build/rm_navigator/rm_navigator.egg-info/PKG-INFO
+writing dependency_links to ../../build/rm_navigator/rm_navigator.egg-info/dependency_links.txt
+writing entry points to ../../build/rm_navigator/rm_navigator.egg-info/entry_points.txt
+writing requirements to ../../build/rm_navigator/rm_navigator.egg-info/requires.txt
+writing top-level names to ../../build/rm_navigator/rm_navigator.egg-info/top_level.txt
+writing manifest file '../../build/rm_navigator/rm_navigator.egg-info/SOURCES.txt'
+reading manifest file '../../build/rm_navigator/rm_navigator.egg-info/SOURCES.txt'
+writing manifest file '../../build/rm_navigator/rm_navigator.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/build
+creating /home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/build/lib
+creating /home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/build/lib/rm_navigator
+copying rm_navigator/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/build/lib/rm_navigator
+copying rm_navigator/navigator.py -> /home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/build/lib/rm_navigator
+running install
+running install_lib
+creating /home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib/python3.8/site-packages/rm_navigator
+copying /home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/build/lib/rm_navigator/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib/python3.8/site-packages/rm_navigator
+copying /home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/build/lib/rm_navigator/navigator.py -> /home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib/python3.8/site-packages/rm_navigator
+byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib/python3.8/site-packages/rm_navigator/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib/python3.8/site-packages/rm_navigator/navigator.py to navigator.cpython-38.pyc
+running install_data
+creating /home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/ament_index
+creating /home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/ament_index/resource_index
+creating /home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/ament_index/resource_index/packages
+copying resource/rm_navigator -> /home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/ament_index/resource_index/packages
+copying package.xml -> /home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/rm_navigator
+running install_egg_info
+Copying ../../build/rm_navigator/rm_navigator.egg-info to /home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib/python3.8/site-packages/rm_navigator-0.0.0-py3.8.egg-info
+running install_scripts
+Installing navigator script to /home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib/rm_navigator
+writing list of installed files to '/home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/install.log'

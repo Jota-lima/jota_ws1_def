@@ -3,7 +3,6 @@
 /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//urdf/robot_base.xacro
 /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//urdf/wheels.xacro
 /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//rviz/robot_vis.rviz
-/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//rviz/robot_vis.rviz:Zone.Identifier
 /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//world/mundo1.world
 /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
 /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description

@@ -1,0 +1,21 @@
+[1.859s] Invoking command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_navigation': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_navigation build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_navigation/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_navigation/install.log --install-scripts $base/lib/rm_navigation --single-version-externally-managed install_data
+[2.165s] running egg_info
+[2.166s] writing ../../build/rm_navigation/rm_navigation.egg-info/PKG-INFO
+[2.167s] writing dependency_links to ../../build/rm_navigation/rm_navigation.egg-info/dependency_links.txt
+[2.167s] writing entry points to ../../build/rm_navigation/rm_navigation.egg-info/entry_points.txt
+[2.167s] writing requirements to ../../build/rm_navigation/rm_navigation.egg-info/requires.txt
+[2.167s] writing top-level names to ../../build/rm_navigation/rm_navigation.egg-info/top_level.txt
+[2.221s] reading manifest file '../../build/rm_navigation/rm_navigation.egg-info/SOURCES.txt'
+[2.223s] writing manifest file '../../build/rm_navigation/rm_navigation.egg-info/SOURCES.txt'
+[2.224s] running build
+[2.225s] running build_py
+[2.228s] running install
+[2.230s] running install_lib
+[2.230s] running install_data
+[2.230s] copying config/nav2_params.yaml -> /home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/config
+[2.230s] running install_egg_info
+[2.231s] removing '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages/rm_navigation-0.0.0-py3.8.egg-info' (and everything under it)
+[2.231s] Copying ../../build/rm_navigation/rm_navigation.egg-info to /home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages/rm_navigation-0.0.0-py3.8.egg-info
+[2.231s] running install_scripts
+[2.255s] writing list of installed files to '/home/jprl/APS1/APS1/jota_ws1/build/rm_navigation/install.log'
+[2.284s] Invoked command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_navigation' returned '0': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_navigation build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_navigation/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_navigation/install.log --install-scripts $base/lib/rm_navigation --single-version-externally-managed install_data

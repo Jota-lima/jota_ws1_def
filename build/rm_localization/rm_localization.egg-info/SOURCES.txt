@@ -12,8 +12,8 @@ config/amcl_params.yaml
 config/ekf_config.yaml
 launch/amcl.launch.py
 launch/ekf.launch.py
-map/my_map.pgm
-map/my_map.yaml
+map/map.pgm
+map/map.yaml
 resource/rm_localization
 rm_localization/__init__.py
 test/test_copyright.py

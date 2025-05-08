@@ -1,0 +1,42 @@
+[1.110s] Invoking command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_localization': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_localization build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/install.log --install-scripts $base/lib/rm_localization --single-version-externally-managed install_data
+[1.378s] running egg_info
+[1.379s] creating ../../build/rm_localization/rm_localization.egg-info
+[1.379s] writing ../../build/rm_localization/rm_localization.egg-info/PKG-INFO
+[1.379s] writing dependency_links to ../../build/rm_localization/rm_localization.egg-info/dependency_links.txt
+[1.380s] writing entry points to ../../build/rm_localization/rm_localization.egg-info/entry_points.txt
+[1.380s] writing requirements to ../../build/rm_localization/rm_localization.egg-info/requires.txt
+[1.380s] writing top-level names to ../../build/rm_localization/rm_localization.egg-info/top_level.txt
+[1.383s] writing manifest file '../../build/rm_localization/rm_localization.egg-info/SOURCES.txt'
+[1.419s] reading manifest file '../../build/rm_localization/rm_localization.egg-info/SOURCES.txt'
+[1.420s] writing manifest file '../../build/rm_localization/rm_localization.egg-info/SOURCES.txt'
+[1.420s] running build
+[1.420s] running build_py
+[1.421s] creating /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build
+[1.422s] creating /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build/lib
+[1.423s] creating /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build/lib/rm_localization
+[1.423s] copying rm_localization/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build/lib/rm_localization
+[1.424s] running install
+[1.426s] running install_lib
+[1.428s] creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages/rm_localization
+[1.428s] copying /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build/lib/rm_localization/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages/rm_localization
+[1.428s] byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages/rm_localization/__init__.py to __init__.cpython-38.pyc
+[1.430s] running install_data
+[1.430s] creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/ament_index
+[1.430s] creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/ament_index/resource_index
+[1.431s] creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/ament_index/resource_index/packages
+[1.431s] copying resource/rm_localization -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/ament_index/resource_index/packages
+[1.431s] copying package.xml -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization
+[1.432s] creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/launch
+[1.432s] copying launch/ekf.launch.py -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/launch
+[1.432s] copying launch/amcl.launch.py -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/launch
+[1.433s] creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/config
+[1.433s] copying config/amcl_params.yaml -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/config
+[1.434s] copying config/ekf_config.yaml -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/config
+[1.435s] creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/map
+[1.435s] copying map/mapaof.yaml -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/map
+[1.437s] copying map/mapaof.pgm -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/map
+[1.437s] running install_egg_info
+[1.440s] Copying ../../build/rm_localization/rm_localization.egg-info to /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages/rm_localization-0.0.0-py3.8.egg-info
+[1.442s] running install_scripts
+[1.467s] writing list of installed files to '/home/jprl/APS1/APS1/jota_ws1/build/rm_localization/install.log'
+[1.518s] Invoked command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_localization' returned '0': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_localization build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/install.log --install-scripts $base/lib/rm_localization --single-version-externally-managed install_data

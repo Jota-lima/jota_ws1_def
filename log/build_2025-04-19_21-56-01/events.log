@@ -1,0 +1,1039 @@
+[0.000000] (-) TimerEvent: {}
+[0.000406] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.000474] (rm_localization) JobQueued: {'identifier': 'rm_localization', 'dependencies': OrderedDict()}
+[0.000500] (rm_slam) JobQueued: {'identifier': 'rm_slam', 'dependencies': OrderedDict()}
+[0.000519] (robot_description) JobQueued: {'identifier': 'robot_description', 'dependencies': OrderedDict()}
+[0.000535] (robot_navigation) JobQueued: {'identifier': 'robot_navigation', 'dependencies': OrderedDict([('custom_interfaces', '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces')])}
+[0.000556] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.013901] (rm_localization) JobStarted: {'identifier': 'rm_localization'}
+[0.028549] (rm_slam) JobStarted: {'identifier': 'rm_slam'}
+[0.038122] (robot_description) JobStarted: {'identifier': 'robot_description'}
+[0.048705] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.053674] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/jprl/APS1/APS1/jota_ws1/src/custom_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces'], 'cwd': '/home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jprl'), ('GIT_ASKPASS', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jprl'), ('OLDPWD', '/home/jprl/APS1/APS1/jota_ws1'), ('TERM_PROGRAM_VERSION', '1.99.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-20617e8b-c1aa-4867-8d9f-fb22efeb9b7c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jprl'), ('NAME', 'MSI'), ('WSL_INTEROP', '/run/WSL/672_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Program Files (x86)/QuickTime/QTSystem/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Users/Joaop/.local/bin:/mnt/c/Users/Joaop:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Joaop/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/jprl/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b05d43ef9a87dd99.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a849e754ab.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/opt/ros/foxy'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.099102] (-) TimerEvent: {}
+[0.199556] (-) TimerEvent: {}
+[0.299928] (-) TimerEvent: {}
+[0.400427] (-) TimerEvent: {}
+[0.500954] (-) TimerEvent: {}
+[0.552949] (robot_description) JobProgress: {'identifier': 'robot_description', 'progress': 'cmake'}
+[0.555935] (robot_description) Command: {'cmd': ['/usr/bin/cmake', '/home/jprl/APS1/APS1/jota_ws1/src/robot_description', '-DCMAKE_INSTALL_PREFIX=/home/jprl/APS1/APS1/jota_ws1/install/robot_description'], 'cwd': '/home/jprl/APS1/APS1/jota_ws1/build/robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jprl'), ('GIT_ASKPASS', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jprl'), ('OLDPWD', '/home/jprl/APS1/APS1/jota_ws1'), ('TERM_PROGRAM_VERSION', '1.99.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-20617e8b-c1aa-4867-8d9f-fb22efeb9b7c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jprl'), ('NAME', 'MSI'), ('WSL_INTEROP', '/run/WSL/672_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Program Files (x86)/QuickTime/QTSystem/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Users/Joaop/.local/bin:/mnt/c/Users/Joaop:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Joaop/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/jprl/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b05d43ef9a87dd99.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a849e754ab.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/jprl/APS1/APS1/jota_ws1/build/robot_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/opt/ros/foxy'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.562635] (custom_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.601170] (-) TimerEvent: {}
+[0.701822] (-) TimerEvent: {}
+[0.802261] (-) TimerEvent: {}
+[0.902697] (-) TimerEvent: {}
+[0.914458] (robot_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.002869] (-) TimerEvent: {}
+[1.081768] (custom_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.103053] (-) TimerEvent: {}
+[1.117700] (rm_localization) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/rm_localization', 'build', '--build-base', '/home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build', 'install', '--record', '/home/jprl/APS1/APS1/jota_ws1/build/rm_localization/install.log', '--install-scripts', '$base/lib/rm_localization', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jprl/APS1/APS1/jota_ws1/src/rm_localization', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jprl', 'GIT_ASKPASS': '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/jprl', 'OLDPWD': '/home/jprl/APS1/APS1/jota_ws1', 'TERM_PROGRAM_VERSION': '1.99.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-20617e8b-c1aa-4867-8d9f-fb22efeb9b7c.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/jprl/APS1/APS1/jota_ws1/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jprl', 'NAME': 'MSI', 'WSL_INTEROP': '/run/WSL/672_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Program Files (x86)/QuickTime/QTSystem/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Users/Joaop/.local/bin:/mnt/c/Users/Joaop:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Joaop/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/jprl/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b05d43ef9a87dd99.txt', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-a849e754ab.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/jprl/APS1/APS1/jota_ws1/build/rm_localization', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jprl/APS1/APS1/jota_ws1/build/rm_localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[1.124947] (rm_slam) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/rm_slam', 'build', '--build-base', '/home/jprl/APS1/APS1/jota_ws1/build/rm_slam/build', 'install', '--record', '/home/jprl/APS1/APS1/jota_ws1/build/rm_slam/install.log', '--install-scripts', '$base/lib/rm_slam', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jprl/APS1/APS1/jota_ws1/src/rm_slam', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jprl', 'GIT_ASKPASS': '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/jprl', 'OLDPWD': '/home/jprl/APS1/APS1/jota_ws1', 'TERM_PROGRAM_VERSION': '1.99.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-20617e8b-c1aa-4867-8d9f-fb22efeb9b7c.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/jprl/APS1/APS1/jota_ws1/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jprl', 'NAME': 'MSI', 'WSL_INTEROP': '/run/WSL/672_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Program Files (x86)/QuickTime/QTSystem/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Users/Joaop/.local/bin:/mnt/c/Users/Joaop:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Joaop/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/jprl/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b05d43ef9a87dd99.txt', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-a849e754ab.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/jprl/APS1/APS1/jota_ws1/build/rm_slam', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jprl/APS1/APS1/jota_ws1/build/rm_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[1.203172] (-) TimerEvent: {}
+[1.207894] (custom_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.303295] (-) TimerEvent: {}
+[1.307372] (robot_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.391912] (rm_localization) StdoutLine: {'line': b'running egg_info\n'}
+[1.392505] (rm_localization) StdoutLine: {'line': b'creating ../../build/rm_localization/rm_localization.egg-info\n'}
+[1.392810] (rm_localization) StdoutLine: {'line': b'writing ../../build/rm_localization/rm_localization.egg-info/PKG-INFO\n'}
+[1.393140] (rm_localization) StdoutLine: {'line': b'writing dependency_links to ../../build/rm_localization/rm_localization.egg-info/dependency_links.txt\n'}
+[1.393555] (rm_localization) StdoutLine: {'line': b'writing entry points to ../../build/rm_localization/rm_localization.egg-info/entry_points.txt\n'}
+[1.393713] (rm_localization) StdoutLine: {'line': b'writing requirements to ../../build/rm_localization/rm_localization.egg-info/requires.txt\n'}
+[1.393846] (rm_localization) StdoutLine: {'line': b'writing top-level names to ../../build/rm_localization/rm_localization.egg-info/top_level.txt\n'}
+[1.396746] (rm_localization) StdoutLine: {'line': b"writing manifest file '../../build/rm_localization/rm_localization.egg-info/SOURCES.txt'\n"}
+[1.398466] (rm_slam) StdoutLine: {'line': b'running egg_info\n'}
+[1.399059] (rm_slam) StdoutLine: {'line': b'creating ../../build/rm_slam/rm_slam.egg-info\n'}
+[1.399432] (rm_slam) StdoutLine: {'line': b'writing ../../build/rm_slam/rm_slam.egg-info/PKG-INFO\n'}
+[1.399822] (rm_slam) StdoutLine: {'line': b'writing dependency_links to ../../build/rm_slam/rm_slam.egg-info/dependency_links.txt\n'}
+[1.400152] (rm_slam) StdoutLine: {'line': b'writing entry points to ../../build/rm_slam/rm_slam.egg-info/entry_points.txt\n'}
+[1.400472] (rm_slam) StdoutLine: {'line': b'writing requirements to ../../build/rm_slam/rm_slam.egg-info/requires.txt\n'}
+[1.400570] (rm_slam) StdoutLine: {'line': b'writing top-level names to ../../build/rm_slam/rm_slam.egg-info/top_level.txt\n'}
+[1.401559] (rm_slam) StdoutLine: {'line': b"writing manifest file '../../build/rm_slam/rm_slam.egg-info/SOURCES.txt'\n"}
+[1.403428] (-) TimerEvent: {}
+[1.432310] (rm_localization) StdoutLine: {'line': b"reading manifest file '../../build/rm_localization/rm_localization.egg-info/SOURCES.txt'\n"}
+[1.433220] (rm_localization) StdoutLine: {'line': b"writing manifest file '../../build/rm_localization/rm_localization.egg-info/SOURCES.txt'\n"}
+[1.433580] (rm_localization) StdoutLine: {'line': b'running build\n'}
+[1.433854] (rm_localization) StdoutLine: {'line': b'running build_py\n'}
+[1.434403] (rm_localization) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build\n'}
+[1.434637] (rm_slam) StdoutLine: {'line': b"reading manifest file '../../build/rm_slam/rm_slam.egg-info/SOURCES.txt'\n"}
+[1.435141] (rm_localization) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build/lib\n'}
+[1.436811] (rm_localization) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build/lib/rm_localization\n'}
+[1.437275] (rm_localization) StdoutLine: {'line': b'copying rm_localization/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build/lib/rm_localization\n'}
+[1.437517] (rm_slam) StdoutLine: {'line': b"writing manifest file '../../build/rm_slam/rm_slam.egg-info/SOURCES.txt'\n"}
+[1.437951] (rm_localization) StdoutLine: {'line': b'running install\n'}
+[1.438342] (rm_slam) StdoutLine: {'line': b'running build\n'}
+[1.438513] (rm_slam) StdoutLine: {'line': b'running build_py\n'}
+[1.438974] (rm_slam) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/build/rm_slam/build\n'}
+[1.439342] (rm_slam) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/build/rm_slam/build/lib\n'}
+[1.439648] (rm_localization) StdoutLine: {'line': b'running install_lib\n'}
+[1.439958] (rm_slam) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/build/rm_slam/build/lib/rm_slam\n'}
+[1.440242] (rm_slam) StdoutLine: {'line': b'copying rm_slam/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/build/rm_slam/build/lib/rm_slam\n'}
+[1.440574] (rm_slam) StdoutLine: {'line': b'running install\n'}
+[1.441105] (rm_slam) StdoutLine: {'line': b'running install_lib\n'}
+[1.441475] (rm_localization) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages/rm_localization\n'}
+[1.441682] (rm_localization) StdoutLine: {'line': b'copying /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build/lib/rm_localization/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages/rm_localization\n'}
+[1.441814] (rm_localization) StdoutLine: {'line': b'byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages/rm_localization/__init__.py to __init__.cpython-38.pyc\n'}
+[1.442453] (rm_slam) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages/rm_slam\n'}
+[1.442769] (rm_slam) StdoutLine: {'line': b'copying /home/jprl/APS1/APS1/jota_ws1/build/rm_slam/build/lib/rm_slam/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages/rm_slam\n'}
+[1.443302] (rm_localization) StdoutLine: {'line': b'running install_data\n'}
+[1.443709] (rm_localization) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/ament_index\n'}
+[1.444217] (rm_localization) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/ament_index/resource_index\n'}
+[1.444559] (rm_localization) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/ament_index/resource_index/packages\n'}
+[1.445001] (rm_slam) StdoutLine: {'line': b'byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages/rm_slam/__init__.py to __init__.cpython-38.pyc\n'}
+[1.445149] (rm_localization) StdoutLine: {'line': b'copying resource/rm_localization -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/ament_index/resource_index/packages\n'}
+[1.445274] (rm_localization) StdoutLine: {'line': b'copying package.xml -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization\n'}
+[1.445361] (rm_localization) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/launch\n'}
+[1.445608] (rm_localization) StdoutLine: {'line': b'copying launch/ekf.launch.py -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/launch\n'}
+[1.445769] (rm_localization) StdoutLine: {'line': b'copying launch/amcl.launch.py -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/launch\n'}
+[1.446126] (rm_localization) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/config\n'}
+[1.446789] (rm_slam) StdoutLine: {'line': b'running install_data\n'}
+[1.447066] (rm_slam) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/ament_index\n'}
+[1.447300] (rm_localization) StdoutLine: {'line': b'copying config/amcl_params.yaml -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/config\n'}
+[1.448062] (rm_localization) StdoutLine: {'line': b'copying config/ekf_config.yaml -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/config\n'}
+[1.448515] (rm_slam) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/ament_index/resource_index\n'}
+[1.448711] (rm_localization) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/map\n'}
+[1.449079] (rm_localization) StdoutLine: {'line': b'copying map/mapaof.yaml -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/map\n'}
+[1.449412] (rm_slam) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/ament_index/resource_index/packages\n'}
+[1.449727] (rm_slam) StdoutLine: {'line': b'copying resource/rm_slam -> /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/ament_index/resource_index/packages\n'}
+[1.450083] (rm_slam) StdoutLine: {'line': b'copying package.xml -> /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam\n'}
+[1.450425] (rm_slam) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/launch\n'}
+[1.450783] (rm_slam) StdoutLine: {'line': b'copying launch/slam.launch.py -> /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/launch\n'}
+[1.450908] (rm_localization) StdoutLine: {'line': b'copying map/mapaof.pgm -> /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/map\n'}
+[1.451023] (rm_slam) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/config\n'}
+[1.451190] (rm_slam) StdoutLine: {'line': b'copying config/slam_config.yaml -> /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/config\n'}
+[1.451281] (rm_slam) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.451360] (rm_localization) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.453621] (rm_slam) StdoutLine: {'line': b'Copying ../../build/rm_slam/rm_slam.egg-info to /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages/rm_slam-0.0.0-py3.8.egg-info\n'}
+[1.454240] (rm_localization) StdoutLine: {'line': b'Copying ../../build/rm_localization/rm_localization.egg-info to /home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages/rm_localization-0.0.0-py3.8.egg-info\n'}
+[1.455955] (rm_slam) StdoutLine: {'line': b'running install_scripts\n'}
+[1.456354] (rm_localization) StdoutLine: {'line': b'running install_scripts\n'}
+[1.480598] (rm_slam) StdoutLine: {'line': b"writing list of installed files to '/home/jprl/APS1/APS1/jota_ws1/build/rm_slam/install.log'\n"}
+[1.480949] (rm_localization) StdoutLine: {'line': b"writing list of installed files to '/home/jprl/APS1/APS1/jota_ws1/build/rm_localization/install.log'\n"}
+[1.503571] (-) TimerEvent: {}
+[1.506916] (robot_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.509303] (rm_slam) CommandEnded: {'returncode': 0}
+[1.529539] (rm_slam) JobEnded: {'identifier': 'rm_slam', 'rc': 0}
+[1.531676] (rm_localization) CommandEnded: {'returncode': 0}
+[1.542053] (rm_localization) JobEnded: {'identifier': 'rm_localization', 'rc': 0}
+[1.550608] (custom_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.553432] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.603764] (-) TimerEvent: {}
+[1.704235] (-) TimerEvent: {}
+[1.804158] (robot_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.804335] (-) TimerEvent: {}
+[1.805048] (robot_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.850498] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.862942] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.863631] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.867096] (custom_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.904514] (-) TimerEvent: {}
+[2.004865] (-) TimerEvent: {}
+[2.078311] (robot_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.088661] (robot_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.088978] (robot_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.091232] (robot_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.105035] (-) TimerEvent: {}
+[2.153732] (custom_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.154748] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.205173] (-) TimerEvent: {}
+[2.305559] (-) TimerEvent: {}
+[2.354061] (robot_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.355250] (robot_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.403220] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.405726] (-) TimerEvent: {}
+[2.414037] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.414577] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.428659] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[2.459524] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[2.459803] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.505898] (-) TimerEvent: {}
+[2.600615] (robot_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.606110] (-) TimerEvent: {}
+[2.612343] (robot_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.612936] (robot_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.615787] (robot_description) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[2.644293] (robot_description) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[2.644510] (robot_description) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.706231] (-) TimerEvent: {}
+[2.714227] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[2.724543] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.736600] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.806377] (-) TimerEvent: {}
+[2.879103] (robot_description) StdoutLine: {'line': b'-- Found urdf: 2.4.0 (/opt/ros/foxy/share/urdf/cmake)\n'}
+[2.906534] (-) TimerEvent: {}
+[3.006940] (-) TimerEvent: {}
+[3.107312] (-) TimerEvent: {}
+[3.207719] (-) TimerEvent: {}
+[3.308159] (-) TimerEvent: {}
+[3.408608] (-) TimerEvent: {}
+[3.509015] (-) TimerEvent: {}
+[3.609412] (-) TimerEvent: {}
+[3.709842] (-) TimerEvent: {}
+[3.810215] (-) TimerEvent: {}
+[3.910559] (-) TimerEvent: {}
+[4.010910] (-) TimerEvent: {}
+[4.111290] (-) TimerEvent: {}
+[4.211645] (-) TimerEvent: {}
+[4.312001] (-) TimerEvent: {}
+[4.412412] (-) TimerEvent: {}
+[4.512788] (-) TimerEvent: {}
+[4.539583] (custom_interfaces) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[4.612912] (-) TimerEvent: {}
+[4.631534] (robot_description) StdoutLine: {'line': b'-- Found xacro: 2.0.7 (/opt/ros/foxy/share/xacro/cmake)\n'}
+[4.634535] (robot_description) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.5.3 (/opt/ros/foxy/share/gazebo_ros_pkgs/cmake)\n'}
+[4.637344] (robot_description) StdoutLine: {'line': b'-- Found gazebo_plugins: 3.5.3 (/opt/ros/foxy/share/gazebo_plugins/cmake)\n'}
+[4.713044] (-) TimerEvent: {}
+[4.758711] (robot_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.765986] (robot_description) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[4.813166] (-) TimerEvent: {}
+[4.913508] (-) TimerEvent: {}
+[5.013893] (-) TimerEvent: {}
+[5.114270] (-) TimerEvent: {}
+[5.214621] (-) TimerEvent: {}
+[5.314970] (-) TimerEvent: {}
+[5.415319] (-) TimerEvent: {}
+[5.515681] (-) TimerEvent: {}
+[5.616055] (-) TimerEvent: {}
+[5.716459] (-) TimerEvent: {}
+[5.816822] (-) TimerEvent: {}
+[5.917211] (-) TimerEvent: {}
+[5.998707] (custom_interfaces) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[6.017338] (-) TimerEvent: {}
+[6.117718] (-) TimerEvent: {}
+[6.184629] (robot_description) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[6.217848] (-) TimerEvent: {}
+[6.318193] (-) TimerEvent: {}
+[6.418554] (-) TimerEvent: {}
+[6.518927] (-) TimerEvent: {}
+[6.619284] (-) TimerEvent: {}
+[6.719734] (-) TimerEvent: {}
+[6.820091] (-) TimerEvent: {}
+[6.920455] (-) TimerEvent: {}
+[7.020868] (-) TimerEvent: {}
+[7.121210] (-) TimerEvent: {}
+[7.221550] (-) TimerEvent: {}
+[7.321895] (-) TimerEvent: {}
+[7.422243] (-) TimerEvent: {}
+[7.522619] (-) TimerEvent: {}
+[7.622991] (-) TimerEvent: {}
+[7.645047] (robot_description) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[7.723105] (-) TimerEvent: {}
+[7.823498] (-) TimerEvent: {}
+[7.923840] (-) TimerEvent: {}
+[8.024221] (-) TimerEvent: {}
+[8.124558] (-) TimerEvent: {}
+[8.224908] (-) TimerEvent: {}
+[8.325343] (-) TimerEvent: {}
+[8.425689] (-) TimerEvent: {}
+[8.526048] (-) TimerEvent: {}
+[8.626424] (-) TimerEvent: {}
+[8.662130] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.697149] (custom_interfaces) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)\n'}
+[8.716723] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[8.726531] (-) TimerEvent: {}
+[8.826902] (-) TimerEvent: {}
+[8.827628] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[8.927061] (-) TimerEvent: {}
+[8.979864] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[9.027179] (-) TimerEvent: {}
+[9.127561] (-) TimerEvent: {}
+[9.227943] (-) TimerEvent: {}
+[9.328347] (-) TimerEvent: {}
+[9.428717] (-) TimerEvent: {}
+[9.529088] (-) TimerEvent: {}
+[9.629535] (-) TimerEvent: {}
+[9.729899] (-) TimerEvent: {}
+[9.812401] (robot_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.830017] (-) TimerEvent: {}
+[9.886810] (robot_description) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[9.889646] (robot_description) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.892014] (robot_description) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[9.930136] (-) TimerEvent: {}
+[10.030464] (-) TimerEvent: {}
+[10.130829] (-) TimerEvent: {}
+[10.171640] (robot_description) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[10.171966] (robot_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[10.230976] (-) TimerEvent: {}
+[10.331342] (-) TimerEvent: {}
+[10.408327] (robot_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[10.408703] (robot_description) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[10.431458] (-) TimerEvent: {}
+[10.531870] (-) TimerEvent: {}
+[10.632405] (-) TimerEvent: {}
+[10.695772] (robot_description) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[10.696120] (robot_description) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[10.732584] (-) TimerEvent: {}
+[10.832960] (-) TimerEvent: {}
+[10.933337] (-) TimerEvent: {}
+[10.954757] (robot_description) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[10.956012] (robot_description) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[11.033474] (-) TimerEvent: {}
+[11.133957] (-) TimerEvent: {}
+[11.182061] (robot_description) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") \n'}
+[11.183675] (robot_description) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[11.199753] (robot_description) StdoutLine: {'line': b'--   Found bullet, version 2.88\n'}
+[11.234096] (-) TimerEvent: {}
+[11.334435] (-) TimerEvent: {}
+[11.434817] (-) TimerEvent: {}
+[11.535211] (-) TimerEvent: {}
+[11.635605] (-) TimerEvent: {}
+[11.736047] (-) TimerEvent: {}
+[11.836392] (-) TimerEvent: {}
+[11.936738] (-) TimerEvent: {}
+[12.037159] (-) TimerEvent: {}
+[12.137577] (-) TimerEvent: {}
+[12.237968] (-) TimerEvent: {}
+[12.338323] (-) TimerEvent: {}
+[12.438717] (-) TimerEvent: {}
+[12.539153] (-) TimerEvent: {}
+[12.639609] (-) TimerEvent: {}
+[12.740094] (-) TimerEvent: {}
+[12.840533] (-) TimerEvent: {}
+[12.941032] (-) TimerEvent: {}
+[13.016793] (robot_description) StdoutLine: {'line': b'-- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") \n'}
+[13.041165] (-) TimerEvent: {}
+[13.141560] (-) TimerEvent: {}
+[13.153326] (robot_description) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") \n'}
+[13.241695] (-) TimerEvent: {}
+[13.342145] (-) TimerEvent: {}
+[13.347362] (robot_description) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.0.0") \n'}
+[13.390161] (robot_description) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[13.429314] (robot_description) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[13.442277] (-) TimerEvent: {}
+[13.542687] (-) TimerEvent: {}
+[13.643088] (-) TimerEvent: {}
+[13.743534] (-) TimerEvent: {}
+[13.843872] (-) TimerEvent: {}
+[13.944252] (-) TimerEvent: {}
+[14.039899] (robot_description) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") \n'}
+[14.044384] (-) TimerEvent: {}
+[14.047309] (robot_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[14.061191] (robot_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[14.065160] (robot_description) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[14.065919] (robot_description) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[14.072624] (robot_description) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[14.091856] (robot_description) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[14.144503] (-) TimerEvent: {}
+[14.184250] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[14.213873] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[14.244514] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[14.244713] (-) TimerEvent: {}
+[14.247283] (custom_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[14.258104] (robot_description) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[14.344844] (-) TimerEvent: {}
+[14.445212] (-) TimerEvent: {}
+[14.545579] (-) TimerEvent: {}
+[14.645929] (-) TimerEvent: {}
+[14.671253] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[14.671603] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[14.671730] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[14.671810] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[14.696328] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[14.746052] (-) TimerEvent: {}
+[14.810068] (custom_interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[14.813352] (custom_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[14.815783] (custom_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[14.828890] (custom_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[14.846177] (-) TimerEvent: {}
+[14.902531] (custom_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[14.922040] (custom_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces\n'}
+[14.931019] (custom_interfaces) CommandEnded: {'returncode': 0}
+[14.934353] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'build'}
+[14.934454] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces', '--', '-j12', '-l12'], 'cwd': '/home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jprl'), ('GIT_ASKPASS', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jprl'), ('OLDPWD', '/home/jprl/APS1/APS1/jota_ws1'), ('TERM_PROGRAM_VERSION', '1.99.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-20617e8b-c1aa-4867-8d9f-fb22efeb9b7c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jprl'), ('NAME', 'MSI'), ('WSL_INTEROP', '/run/WSL/672_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Program Files (x86)/QuickTime/QTSystem/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Users/Joaop/.local/bin:/mnt/c/Users/Joaop:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Joaop/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/jprl/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b05d43ef9a87dd99.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a849e754ab.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/opt/ros/foxy'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[14.946463] (-) TimerEvent: {}
+[14.978444] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces__cpp\x1b[0m\n'}
+[14.981296] (custom_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[14.991437] (custom_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[15.046566] (-) TimerEvent: {}
+[15.146987] (-) TimerEvent: {}
+[15.247486] (-) TimerEvent: {}
+[15.324065] (robot_description) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[15.334037] (robot_description) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[15.347632] (-) TimerEvent: {}
+[15.448110] (-) TimerEvent: {}
+[15.463025] (custom_interfaces) StdoutLine: {'line': b'[  6%] Built target custom_interfaces__cpp\n'}
+[15.477997] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces__rosidl_generator_c\x1b[0m\n'}
+[15.478317] (custom_interfaces) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[15.481228] (custom_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[15.481696] (custom_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[15.503488] (custom_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/action/detail/rotate__functions.c.o\x1b[0m\n'}
+[15.548270] (-) TimerEvent: {}
+[15.648679] (-) TimerEvent: {}
+[15.693561] (custom_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libcustom_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[15.748905] (-) TimerEvent: {}
+[15.849491] (-) TimerEvent: {}
+[15.857238] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[15.896779] (custom_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/action/rotate__type_support.cpp.o\x1b[0m\n'}
+[15.939655] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[15.949588] (-) TimerEvent: {}
+[15.962492] (custom_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/action/detail/rotate__type_support.cpp.o\x1b[0m\n'}
+[16.026758] (custom_interfaces) StdoutLine: {'line': b'[ 29%] Built target custom_interfaces__rosidl_generator_c\n'}
+[16.038766] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[16.040328] (custom_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[16.040934] (custom_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[16.049764] (-) TimerEvent: {}
+[16.086193] (custom_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/action/detail/dds_fastrtps/rotate__type_support.cpp.o\x1b[0m\n'}
+[16.095465] (robot_description) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[16.095716] (robot_description) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[16.149900] (-) TimerEvent: {}
+[16.250385] (-) TimerEvent: {}
+[16.350915] (-) TimerEvent: {}
+[16.449245] (custom_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[16.451032] (-) TimerEvent: {}
+[16.475753] (custom_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[16.494104] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[16.521258] (custom_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/action/rotate__type_support.cpp.o\x1b[0m\n'}
+[16.551173] (-) TimerEvent: {}
+[16.583749] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[16.590634] (custom_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[16.606404] (custom_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/action/detail/rotate__type_support.c.o\x1b[0m\n'}
+[16.651347] (-) TimerEvent: {}
+[16.663658] (custom_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libcustom_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[16.741393] (custom_interfaces) StdoutLine: {'line': b'[ 58%] Built target custom_interfaces__rosidl_typesupport_cpp\n'}
+[16.751485] (-) TimerEvent: {}
+[16.820930] (robot_description) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[16.821380] (robot_description) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[16.823254] (custom_interfaces) StdoutLine: {'line': b'[ 58%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[16.851634] (-) TimerEvent: {}
+[16.872654] (custom_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[16.876479] (custom_interfaces) StdoutLine: {'line': b'[ 61%] Built target custom_interfaces__rosidl_typesupport_c\n'}
+[16.931410] (custom_interfaces) StdoutLine: {'line': b'[ 61%] Built target custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[16.951759] (-) TimerEvent: {}
+[17.052107] (-) TimerEvent: {}
+[17.150701] (custom_interfaces) StdoutLine: {'line': b'[ 61%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[17.152208] (-) TimerEvent: {}
+[17.162021] (custom_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[17.252371] (-) TimerEvent: {}
+[17.352711] (-) TimerEvent: {}
+[17.380831] (robot_description) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[17.381158] (robot_description) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[17.452825] (-) TimerEvent: {}
+[17.537041] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[17.552962] (-) TimerEvent: {}
+[17.559536] (custom_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/action/detail/rotate__type_support_c.cpp.o\x1b[0m\n'}
+[17.653072] (-) TimerEvent: {}
+[17.753467] (-) TimerEvent: {}
+[17.853808] (-) TimerEvent: {}
+[17.902840] (robot_description) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[17.903066] (robot_description) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[17.953465] (custom_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[17.953951] (-) TimerEvent: {}
+[18.054263] (-) TimerEvent: {}
+[18.154675] (-) TimerEvent: {}
+[18.242493] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[18.254028] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces\x1b[0m\n'}
+[18.254770] (-) TimerEvent: {}
+[18.265077] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces\n'}
+[18.277214] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces__py\x1b[0m\n'}
+[18.289769] (custom_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[18.354956] (-) TimerEvent: {}
+[18.455299] (-) TimerEvent: {}
+[18.484355] (robot_description) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[18.484584] (robot_description) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[18.555414] (-) TimerEvent: {}
+[18.655747] (-) TimerEvent: {}
+[18.756132] (-) TimerEvent: {}
+[18.856491] (-) TimerEvent: {}
+[18.956918] (-) TimerEvent: {}
+[19.057283] (-) TimerEvent: {}
+[19.067987] (robot_description) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[19.140576] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces__py\n'}
+[19.151046] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces__python\x1b[0m\n'}
+[19.157392] (-) TimerEvent: {}
+[19.196297] (custom_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__python.dir/rosidl_generator_py/custom_interfaces/action/_rotate_s.c.o\x1b[0m\n'}
+[19.257517] (-) TimerEvent: {}
+[19.357925] (-) TimerEvent: {}
+[19.381146] (custom_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/libcustom_interfaces__python.so\x1b[0m\n'}
+[19.458110] (-) TimerEvent: {}
+[19.558654] (-) TimerEvent: {}
+[19.659113] (-) TimerEvent: {}
+[19.689216] (custom_interfaces) StdoutLine: {'line': b'[ 80%] Built target custom_interfaces__python\n'}
+[19.706433] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[19.708148] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[19.708722] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[19.746651] (custom_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[19.747976] (custom_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[19.756154] (custom_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[19.759290] (-) TimerEvent: {}
+[19.859731] (-) TimerEvent: {}
+[19.950959] (custom_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[19.959910] (-) TimerEvent: {}
+[19.971716] (custom_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[20.009939] (custom_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[20.060035] (-) TimerEvent: {}
+[20.160482] (-) TimerEvent: {}
+[20.260998] (-) TimerEvent: {}
+[20.276903] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_c__pyext\n'}
+[20.313105] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[20.361169] (-) TimerEvent: {}
+[20.372251] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[20.389847] (custom_interfaces) CommandEnded: {'returncode': 0}
+[20.393124] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'install'}
+[20.407703] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces'], 'cwd': '/home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jprl'), ('GIT_ASKPASS', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jprl'), ('OLDPWD', '/home/jprl/APS1/APS1/jota_ws1'), ('TERM_PROGRAM_VERSION', '1.99.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-20617e8b-c1aa-4867-8d9f-fb22efeb9b7c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jprl'), ('NAME', 'MSI'), ('WSL_INTEROP', '/run/WSL/672_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Program Files (x86)/QuickTime/QTSystem/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Users/Joaop/.local/bin:/mnt/c/Users/Joaop:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Joaop/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/jprl/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b05d43ef9a87dd99.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a849e754ab.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/opt/ros/foxy'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[20.418615] (custom_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.419663] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces\n'}
+[20.420088] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces\n'}
+[20.420483] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/msg\n'}
+[20.420892] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[20.421241] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action\n'}
+[20.421705] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail\n'}
+[20.421960] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__struct.h\n'}
+[20.422203] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__functions.h\n'}
+[20.422611] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__type_support.h\n'}
+[20.422891] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__functions.c\n'}
+[20.423019] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/rotate.h\n'}
+[20.423269] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh\n'}
+[20.423397] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv\n'}
+[20.423513] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so\n'}
+[20.423719] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so" to ""\n'}
+[20.424096] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces\n'}
+[20.424424] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/msg\n'}
+[20.424616] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[20.424776] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action\n'}
+[20.424897] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail\n'}
+[20.425036] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__rosidl_typesupport_fastrtps_c.h\n'}
+[20.425134] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[20.425491] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[20.425831] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces\n'}
+[20.425925] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/msg\n'}
+[20.426032] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[20.426380] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action\n'}
+[20.426499] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail\n'}
+[20.426587] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/dds_fastrtps\n'}
+[20.426669] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.426761] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[20.427029] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[20.427520] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces\n'}
+[20.427791] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/msg\n'}
+[20.428097] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[20.428640] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action\n'}
+[20.428950] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail\n'}
+[20.429188] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__rosidl_typesupport_introspection_c.h\n'}
+[20.429307] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__type_support.c\n'}
+[20.429540] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[20.429896] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[20.430263] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so\n'}
+[20.430474] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[20.430682] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces\n'}
+[20.430987] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/msg\n'}
+[20.431282] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[20.431416] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action\n'}
+[20.431505] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail\n'}
+[20.431726] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__type_support.hpp\n'}
+[20.431915] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__builder.hpp\n'}
+[20.432191] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__struct.hpp\n'}
+[20.432503] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__traits.hpp\n'}
+[20.432770] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/rotate.hpp\n'}
+[20.432882] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces\n'}
+[20.433023] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action\n'}
+[20.433245] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail\n'}
+[20.433332] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__type_support.cpp\n'}
+[20.433414] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/include/custom_interfaces/action/detail/rotate__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.433494] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[20.434058] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[20.434296] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so\n'}
+[20.435097] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[20.435320] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh\n'}
+[20.435538] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv\n'}
+[20.436559] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/__init__.py\n'}
+[20.461296] (-) TimerEvent: {}
+[20.482363] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/__init__.py'...\n"}
+[20.490531] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/action\n'}
+[20.491008] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/action/__init__.py\n'}
+[20.491575] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/action/_rotate.py\n'}
+[20.491793] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/action/_rotate_s.c\n'}
+[20.492236] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[20.493314] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[20.493730] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[20.494928] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[20.495517] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[20.496713] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[20.497796] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__python.so\n'}
+[20.498521] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/libcustom_interfaces__python.so" to ""\n'}
+[20.498991] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/action/Rotate.idl\n'}
+[20.499429] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/action/Rotate.action\n'}
+[20.500048] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces\n'}
+[20.500675] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces\n'}
+[20.501013] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh\n'}
+[20.501441] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv\n'}
+[20.502072] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/environment/path.sh\n'}
+[20.502598] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/environment/path.dsv\n'}
+[20.503019] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/local_setup.bash\n'}
+[20.503119] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/local_setup.sh\n'}
+[20.503469] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/local_setup.zsh\n'}
+[20.503974] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/local_setup.dsv\n'}
+[20.504134] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/package.dsv\n'}
+[20.504576] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces\n'}
+[20.505139] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_generator_cExport.cmake\n'}
+[20.505533] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[20.505968] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[20.506510] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[20.507038] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[20.507316] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[20.507770] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_generator_cppExport.cmake\n'}
+[20.508087] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[20.508514] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[20.509059] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[20.509383] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[20.509828] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[20.510441] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[20.510925] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[20.511254] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[20.511540] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[20.512167] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[20.512620] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[20.512774] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake\n'}
+[20.512918] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake\n'}
+[20.513071] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/package.xml\n'}
+[20.516761] (custom_interfaces) CommandEnded: {'returncode': 0}
+[20.558627] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[20.561436] (-) TimerEvent: {}
+[20.561746] (robot_navigation) JobStarted: {'identifier': 'robot_navigation'}
+[20.661670] (-) TimerEvent: {}
+[20.762333] (-) TimerEvent: {}
+[20.862760] (-) TimerEvent: {}
+[20.963305] (-) TimerEvent: {}
+[21.063960] (-) TimerEvent: {}
+[21.164353] (-) TimerEvent: {}
+[21.264845] (-) TimerEvent: {}
+[21.365183] (-) TimerEvent: {}
+[21.465608] (-) TimerEvent: {}
+[21.566090] (-) TimerEvent: {}
+[21.666465] (-) TimerEvent: {}
+[21.766834] (-) TimerEvent: {}
+[21.818493] (robot_navigation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_navigation', 'build', '--build-base', '/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build', 'install', '--record', '/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/install.log', '--install-scripts', '$base/lib/robot_navigation', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jprl/APS1/APS1/jota_ws1/src/robot_navigation', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jprl', 'GIT_ASKPASS': '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/jprl', 'OLDPWD': '/home/jprl/APS1/APS1/jota_ws1', 'TERM_PROGRAM_VERSION': '1.99.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-20617e8b-c1aa-4867-8d9f-fb22efeb9b7c.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/jprl/APS1/APS1/jota_ws1/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'jprl', 'NAME': 'MSI', 'WSL_INTEROP': '/run/WSL/672_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Program Files (x86)/QuickTime/QTSystem/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Users/Joaop/.local/bin:/mnt/c/Users/Joaop:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Joaop/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/jprl/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b05d43ef9a87dd99.txt', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-a849e754ab.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/home/jprl/APS1/APS1/jota_ws1/install/robot_description', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[21.867008] (-) TimerEvent: {}
+[21.967433] (-) TimerEvent: {}
+[22.050451] (robot_navigation) StdoutLine: {'line': b'running egg_info\n'}
+[22.051047] (robot_navigation) StdoutLine: {'line': b'creating ../../build/robot_navigation/robot_navigation.egg-info\n'}
+[22.051528] (robot_navigation) StdoutLine: {'line': b'writing ../../build/robot_navigation/robot_navigation.egg-info/PKG-INFO\n'}
+[22.051975] (robot_navigation) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_navigation/robot_navigation.egg-info/dependency_links.txt\n'}
+[22.052383] (robot_navigation) StdoutLine: {'line': b'writing entry points to ../../build/robot_navigation/robot_navigation.egg-info/entry_points.txt\n'}
+[22.052710] (robot_navigation) StdoutLine: {'line': b'writing requirements to ../../build/robot_navigation/robot_navigation.egg-info/requires.txt\n'}
+[22.052821] (robot_navigation) StdoutLine: {'line': b'writing top-level names to ../../build/robot_navigation/robot_navigation.egg-info/top_level.txt\n'}
+[22.053950] (robot_navigation) StdoutLine: {'line': b"writing manifest file '../../build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'\n"}
+[22.067567] (-) TimerEvent: {}
+[22.087919] (robot_navigation) StdoutLine: {'line': b"reading manifest file '../../build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'\n"}
+[22.088592] (robot_navigation) StdoutLine: {'line': b"writing manifest file '../../build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'\n"}
+[22.088930] (robot_navigation) StdoutLine: {'line': b'running build\n'}
+[22.089206] (robot_navigation) StdoutLine: {'line': b'running build_py\n'}
+[22.089420] (robot_navigation) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build\n'}
+[22.089770] (robot_navigation) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib\n'}
+[22.089968] (robot_navigation) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation\n'}
+[22.090044] (robot_navigation) StdoutLine: {'line': b'copying robot_navigation/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation\n'}
+[22.090192] (robot_navigation) StdoutLine: {'line': b'copying robot_navigation/navigation_node.py -> /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation\n'}
+[22.090454] (robot_navigation) StdoutLine: {'line': b'copying robot_navigation/rotation_server.py -> /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation\n'}
+[22.090533] (robot_navigation) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/utils\n'}
+[22.090596] (robot_navigation) StdoutLine: {'line': b'copying robot_navigation/utils/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/utils\n'}
+[22.090750] (robot_navigation) StdoutLine: {'line': b'copying robot_navigation/utils/tf_transformations.py -> /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/utils\n'}
+[22.091048] (robot_navigation) StdoutLine: {'line': b'running install\n'}
+[22.091452] (robot_navigation) StdoutLine: {'line': b'running install_lib\n'}
+[22.092371] (robot_navigation) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation\n'}
+[22.092634] (robot_navigation) StdoutLine: {'line': b'copying /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation\n'}
+[22.092846] (robot_navigation) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/utils\n'}
+[22.093081] (robot_navigation) StdoutLine: {'line': b'copying /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/utils/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/utils\n'}
+[22.093385] (robot_navigation) StdoutLine: {'line': b'copying /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/utils/tf_transformations.py -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/utils\n'}
+[22.093713] (robot_navigation) StdoutLine: {'line': b'copying /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/navigation_node.py -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation\n'}
+[22.093801] (robot_navigation) StdoutLine: {'line': b'copying /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/rotation_server.py -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation\n'}
+[22.093975] (robot_navigation) StdoutLine: {'line': b'byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/__init__.py to __init__.cpython-38.pyc\n'}
+[22.095502] (robot_navigation) StdoutLine: {'line': b'byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/utils/__init__.py to __init__.cpython-38.pyc\n'}
+[22.096054] (robot_navigation) StdoutLine: {'line': b'byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/utils/tf_transformations.py to tf_transformations.cpython-38.pyc\n'}
+[22.096544] (robot_navigation) StdoutLine: {'line': b'byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/navigation_node.py to navigation_node.cpython-38.pyc\n'}
+[22.098280] (robot_navigation) StdoutLine: {'line': b'byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/rotation_server.py to rotation_server.cpython-38.pyc\n'}
+[22.098972] (robot_navigation) StdoutLine: {'line': b'running install_data\n'}
+[22.099185] (robot_navigation) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/ament_index\n'}
+[22.099563] (robot_navigation) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/ament_index/resource_index\n'}
+[22.099675] (robot_navigation) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/ament_index/resource_index/packages\n'}
+[22.099948] (robot_navigation) StdoutLine: {'line': b'copying resource/robot_navigation -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/ament_index/resource_index/packages\n'}
+[22.100312] (robot_navigation) StdoutLine: {'line': b'copying package.xml -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation\n'}
+[22.100484] (robot_navigation) StdoutLine: {'line': b'creating /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/launch\n'}
+[22.100626] (robot_navigation) StdoutLine: {'line': b'copying launch/navigation.launch.py -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/launch\n'}
+[22.100984] (robot_navigation) StdoutLine: {'line': b'running install_egg_info\n'}
+[22.102237] (robot_navigation) StdoutLine: {'line': b'Copying ../../build/robot_navigation/robot_navigation.egg-info to /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation-0.0.0-py3.8.egg-info\n'}
+[22.103240] (robot_navigation) StdoutLine: {'line': b'running install_scripts\n'}
+[22.119359] (robot_navigation) StdoutLine: {'line': b'Installing navigation_node script to /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/robot_navigation\n'}
+[22.119750] (robot_navigation) StdoutLine: {'line': b'Installing rotation_server script to /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/robot_navigation\n'}
+[22.120251] (robot_navigation) StdoutLine: {'line': b"writing list of installed files to '/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/install.log'\n"}
+[22.142527] (robot_navigation) CommandEnded: {'returncode': 0}
+[22.150518] (robot_navigation) JobEnded: {'identifier': 'robot_navigation', 'rc': 0}
+[22.167703] (-) TimerEvent: {}
+[22.268060] (-) TimerEvent: {}
+[22.368400] (-) TimerEvent: {}
+[22.468838] (-) TimerEvent: {}
+[22.569187] (-) TimerEvent: {}
+[22.669528] (-) TimerEvent: {}
+[22.769873] (-) TimerEvent: {}
+[22.870252] (-) TimerEvent: {}
+[22.970644] (-) TimerEvent: {}
+[23.070993] (-) TimerEvent: {}
+[23.171338] (-) TimerEvent: {}
+[23.271714] (-) TimerEvent: {}
+[23.372056] (-) TimerEvent: {}
+[23.472489] (-) TimerEvent: {}
+[23.572865] (-) TimerEvent: {}
+[23.673247] (-) TimerEvent: {}
+[23.773622] (-) TimerEvent: {}
+[23.873998] (-) TimerEvent: {}
+[23.974368] (-) TimerEvent: {}
+[24.074743] (-) TimerEvent: {}
+[24.175124] (-) TimerEvent: {}
+[24.275465] (-) TimerEvent: {}
+[24.375826] (-) TimerEvent: {}
+[24.476158] (-) TimerEvent: {}
+[24.576499] (-) TimerEvent: {}
+[24.677000] (-) TimerEvent: {}
+[24.777383] (-) TimerEvent: {}
+[24.877721] (-) TimerEvent: {}
+[24.978088] (-) TimerEvent: {}
+[25.078496] (-) TimerEvent: {}
+[25.178867] (-) TimerEvent: {}
+[25.279202] (-) TimerEvent: {}
+[25.379537] (-) TimerEvent: {}
+[25.479874] (-) TimerEvent: {}
+[25.580328] (-) TimerEvent: {}
+[25.680692] (-) TimerEvent: {}
+[25.781062] (-) TimerEvent: {}
+[25.881400] (-) TimerEvent: {}
+[25.981770] (-) TimerEvent: {}
+[26.082104] (-) TimerEvent: {}
+[26.182447] (-) TimerEvent: {}
+[26.282860] (-) TimerEvent: {}
+[26.383207] (-) TimerEvent: {}
+[26.483585] (-) TimerEvent: {}
+[26.583965] (-) TimerEvent: {}
+[26.684318] (-) TimerEvent: {}
+[26.784674] (-) TimerEvent: {}
+[26.885052] (-) TimerEvent: {}
+[26.985427] (-) TimerEvent: {}
+[27.085800] (-) TimerEvent: {}
+[27.186137] (-) TimerEvent: {}
+[27.286477] (-) TimerEvent: {}
+[27.386855] (-) TimerEvent: {}
+[27.487238] (-) TimerEvent: {}
+[27.587594] (-) TimerEvent: {}
+[27.687968] (-) TimerEvent: {}
+[27.788316] (-) TimerEvent: {}
+[27.888692] (-) TimerEvent: {}
+[27.989044] (-) TimerEvent: {}
+[28.089391] (-) TimerEvent: {}
+[28.189792] (-) TimerEvent: {}
+[28.290136] (-) TimerEvent: {}
+[28.390514] (-) TimerEvent: {}
+[28.490887] (-) TimerEvent: {}
+[28.591303] (-) TimerEvent: {}
+[28.691715] (-) TimerEvent: {}
+[28.792162] (-) TimerEvent: {}
+[28.892562] (-) TimerEvent: {}
+[28.992943] (-) TimerEvent: {}
+[29.093337] (-) TimerEvent: {}
+[29.193698] (-) TimerEvent: {}
+[29.294097] (-) TimerEvent: {}
+[29.394438] (-) TimerEvent: {}
+[29.494831] (-) TimerEvent: {}
+[29.595226] (-) TimerEvent: {}
+[29.695575] (-) TimerEvent: {}
+[29.795926] (-) TimerEvent: {}
+[29.896321] (-) TimerEvent: {}
+[29.996671] (-) TimerEvent: {}
+[30.097053] (-) TimerEvent: {}
+[30.197467] (-) TimerEvent: {}
+[30.297827] (-) TimerEvent: {}
+[30.398260] (-) TimerEvent: {}
+[30.498689] (-) TimerEvent: {}
+[30.599040] (-) TimerEvent: {}
+[30.699395] (-) TimerEvent: {}
+[30.799778] (-) TimerEvent: {}
+[30.900104] (-) TimerEvent: {}
+[31.000430] (-) TimerEvent: {}
+[31.100769] (-) TimerEvent: {}
+[31.201116] (-) TimerEvent: {}
+[31.301460] (-) TimerEvent: {}
+[31.401862] (-) TimerEvent: {}
+[31.502235] (-) TimerEvent: {}
+[31.602576] (-) TimerEvent: {}
+[31.702967] (-) TimerEvent: {}
+[31.803341] (-) TimerEvent: {}
+[31.903677] (-) TimerEvent: {}
+[32.004013] (-) TimerEvent: {}
+[32.104406] (-) TimerEvent: {}
+[32.204820] (-) TimerEvent: {}
+[32.305197] (-) TimerEvent: {}
+[32.405602] (-) TimerEvent: {}
+[32.505958] (-) TimerEvent: {}
+[32.606333] (-) TimerEvent: {}
+[32.706680] (-) TimerEvent: {}
+[32.807032] (-) TimerEvent: {}
+[32.907424] (-) TimerEvent: {}
+[33.007871] (-) TimerEvent: {}
+[33.108413] (-) TimerEvent: {}
+[33.208823] (-) TimerEvent: {}
+[33.309208] (-) TimerEvent: {}
+[33.409766] (-) TimerEvent: {}
+[33.510173] (-) TimerEvent: {}
+[33.610710] (-) TimerEvent: {}
+[33.711082] (-) TimerEvent: {}
+[33.811454] (-) TimerEvent: {}
+[33.911807] (-) TimerEvent: {}
+[34.012165] (-) TimerEvent: {}
+[34.112572] (-) TimerEvent: {}
+[34.212982] (-) TimerEvent: {}
+[34.313372] (-) TimerEvent: {}
+[34.413721] (-) TimerEvent: {}
+[34.514104] (-) TimerEvent: {}
+[34.614447] (-) TimerEvent: {}
+[34.714794] (-) TimerEvent: {}
+[34.815174] (-) TimerEvent: {}
+[34.915590] (-) TimerEvent: {}
+[35.015943] (-) TimerEvent: {}
+[35.116319] (-) TimerEvent: {}
+[35.216701] (-) TimerEvent: {}
+[35.317122] (-) TimerEvent: {}
+[35.417499] (-) TimerEvent: {}
+[35.517875] (-) TimerEvent: {}
+[35.618249] (-) TimerEvent: {}
+[35.718603] (-) TimerEvent: {}
+[35.818972] (-) TimerEvent: {}
+[35.919364] (-) TimerEvent: {}
+[36.019737] (-) TimerEvent: {}
+[36.120069] (-) TimerEvent: {}
+[36.220412] (-) TimerEvent: {}
+[36.320810] (-) TimerEvent: {}
+[36.421189] (-) TimerEvent: {}
+[36.521561] (-) TimerEvent: {}
+[36.621957] (-) TimerEvent: {}
+[36.722300] (-) TimerEvent: {}
+[36.822682] (-) TimerEvent: {}
+[36.923061] (-) TimerEvent: {}
+[37.023462] (-) TimerEvent: {}
+[37.123950] (-) TimerEvent: {}
+[37.224291] (-) TimerEvent: {}
+[37.324665] (-) TimerEvent: {}
+[37.425022] (-) TimerEvent: {}
+[37.525406] (-) TimerEvent: {}
+[37.625839] (-) TimerEvent: {}
+[37.726197] (-) TimerEvent: {}
+[37.826581] (-) TimerEvent: {}
+[37.926962] (-) TimerEvent: {}
+[38.027313] (-) TimerEvent: {}
+[38.127769] (-) TimerEvent: {}
+[38.228226] (-) TimerEvent: {}
+[38.328613] (-) TimerEvent: {}
+[38.428994] (-) TimerEvent: {}
+[38.529367] (-) TimerEvent: {}
+[38.629870] (-) TimerEvent: {}
+[38.730221] (-) TimerEvent: {}
+[38.830602] (-) TimerEvent: {}
+[38.930942] (-) TimerEvent: {}
+[39.031277] (-) TimerEvent: {}
+[39.131612] (-) TimerEvent: {}
+[39.231956] (-) TimerEvent: {}
+[39.332328] (-) TimerEvent: {}
+[39.432702] (-) TimerEvent: {}
+[39.533041] (-) TimerEvent: {}
+[39.633391] (-) TimerEvent: {}
+[39.733737] (-) TimerEvent: {}
+[39.834082] (-) TimerEvent: {}
+[39.934436] (-) TimerEvent: {}
+[40.034773] (-) TimerEvent: {}
+[40.135148] (-) TimerEvent: {}
+[40.235516] (-) TimerEvent: {}
+[40.335895] (-) TimerEvent: {}
+[40.436254] (-) TimerEvent: {}
+[40.536632] (-) TimerEvent: {}
+[40.637022] (-) TimerEvent: {}
+[40.737349] (-) TimerEvent: {}
+[40.837726] (-) TimerEvent: {}
+[40.938147] (-) TimerEvent: {}
+[41.038493] (-) TimerEvent: {}
+[41.138845] (-) TimerEvent: {}
+[41.239239] (-) TimerEvent: {}
+[41.339657] (-) TimerEvent: {}
+[41.440065] (-) TimerEvent: {}
+[41.540438] (-) TimerEvent: {}
+[41.640814] (-) TimerEvent: {}
+[41.741198] (-) TimerEvent: {}
+[41.841580] (-) TimerEvent: {}
+[41.941939] (-) TimerEvent: {}
+[42.042314] (-) TimerEvent: {}
+[42.142685] (-) TimerEvent: {}
+[42.243059] (-) TimerEvent: {}
+[42.343395] (-) TimerEvent: {}
+[42.443732] (-) TimerEvent: {}
+[42.544109] (-) TimerEvent: {}
+[42.644449] (-) TimerEvent: {}
+[42.744825] (-) TimerEvent: {}
+[42.845178] (-) TimerEvent: {}
+[42.945515] (-) TimerEvent: {}
+[43.045871] (-) TimerEvent: {}
+[43.146203] (-) TimerEvent: {}
+[43.246526] (-) TimerEvent: {}
+[43.346857] (-) TimerEvent: {}
+[43.447241] (-) TimerEvent: {}
+[43.547575] (-) TimerEvent: {}
+[43.647903] (-) TimerEvent: {}
+[43.748254] (-) TimerEvent: {}
+[43.848603] (-) TimerEvent: {}
+[43.948971] (-) TimerEvent: {}
+[44.049318] (-) TimerEvent: {}
+[44.149683] (-) TimerEvent: {}
+[44.250079] (-) TimerEvent: {}
+[44.350481] (-) TimerEvent: {}
+[44.450962] (-) TimerEvent: {}
+[44.551319] (-) TimerEvent: {}
+[44.651703] (-) TimerEvent: {}
+[44.752047] (-) TimerEvent: {}
+[44.852430] (-) TimerEvent: {}
+[44.952912] (-) TimerEvent: {}
+[45.053351] (-) TimerEvent: {}
+[45.153893] (-) TimerEvent: {}
+[45.254271] (-) TimerEvent: {}
+[45.354617] (-) TimerEvent: {}
+[45.454971] (-) TimerEvent: {}
+[45.555363] (-) TimerEvent: {}
+[45.655701] (-) TimerEvent: {}
+[45.756035] (-) TimerEvent: {}
+[45.856372] (-) TimerEvent: {}
+[45.956738] (-) TimerEvent: {}
+[45.959260] (robot_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[45.963070] (robot_description) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.5.1\n'}
+[45.963620] (robot_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[46.056899] (-) TimerEvent: {}
+[46.157241] (-) TimerEvent: {}
+[46.257625] (-) TimerEvent: {}
+[46.357973] (-) TimerEvent: {}
+[46.458387] (-) TimerEvent: {}
+[46.558763] (-) TimerEvent: {}
+[46.659136] (-) TimerEvent: {}
+[46.759546] (-) TimerEvent: {}
+[46.859918] (-) TimerEvent: {}
+[46.960342] (-) TimerEvent: {}
+[47.060678] (-) TimerEvent: {}
+[47.161037] (-) TimerEvent: {}
+[47.261411] (-) TimerEvent: {}
+[47.361785] (-) TimerEvent: {}
+[47.462175] (-) TimerEvent: {}
+[47.562547] (-) TimerEvent: {}
+[47.662973] (-) TimerEvent: {}
+[47.763347] (-) TimerEvent: {}
+[47.863719] (-) TimerEvent: {}
+[47.964062] (-) TimerEvent: {}
+[48.064416] (-) TimerEvent: {}
+[48.164750] (-) TimerEvent: {}
+[48.265110] (-) TimerEvent: {}
+[48.365485] (-) TimerEvent: {}
+[48.465892] (-) TimerEvent: {}
+[48.499429] (robot_description) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[48.504634] (robot_description) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[48.523173] (robot_description) StdoutLine: {'line': b'--   Found libzmq , version 4.3.2\n'}
+[48.566018] (-) TimerEvent: {}
+[48.666386] (-) TimerEvent: {}
+[48.671031] (robot_description) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[48.750935] (robot_description) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[48.766254] (robot_description) StdoutLine: {'line': b'--   Found uuid, version 2.34.0\n'}
+[48.766451] (-) TimerEvent: {}
+[48.866734] (-) TimerEvent: {}
+[48.914049] (robot_description) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[48.917730] (robot_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.11.1\n'}
+[48.918239] (robot_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[48.966866] (-) TimerEvent: {}
+[49.067296] (-) TimerEvent: {}
+[49.167672] (-) TimerEvent: {}
+[49.268031] (-) TimerEvent: {}
+[49.368423] (-) TimerEvent: {}
+[49.468861] (-) TimerEvent: {}
+[49.569227] (-) TimerEvent: {}
+[49.669638] (-) TimerEvent: {}
+[49.770067] (-) TimerEvent: {}
+[49.870415] (-) TimerEvent: {}
+[49.970836] (-) TimerEvent: {}
+[50.071203] (-) TimerEvent: {}
+[50.171612] (-) TimerEvent: {}
+[50.172614] (robot_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[50.178214] (robot_description) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[50.196282] (robot_description) StdoutLine: {'line': b'--   Found tinyxml2, version 6.2.0\n'}
+[50.271724] (-) TimerEvent: {}
+[50.353640] (robot_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.11.1\n'}
+[50.358215] (robot_description) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.17.1\n'}
+[50.358709] (robot_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[50.371875] (-) TimerEvent: {}
+[50.412276] (robot_description) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[50.462160] (robot_description) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[50.463672] (robot_description) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[50.472029] (-) TimerEvent: {}
+[50.572384] (-) TimerEvent: {}
+[50.582454] (robot_description) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[50.586442] (robot_description) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.17.1\n'}
+[50.587748] (robot_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[50.588254] (robot_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[50.594169] (robot_description) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.9.2\n'}
+[50.594805] (robot_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[50.672541] (-) TimerEvent: {}
+[50.772963] (-) TimerEvent: {}
+[50.873360] (-) TimerEvent: {}
+[50.973776] (-) TimerEvent: {}
+[51.074278] (-) TimerEvent: {}
+[51.148830] (robot_description) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  \n'}
+[51.159334] (robot_description) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[51.174421] (-) TimerEvent: {}
+[51.179331] (robot_description) StdoutLine: {'line': b'--   Found jsoncpp, version 1.7.4\n'}
+[51.274599] (-) TimerEvent: {}
+[51.375005] (-) TimerEvent: {}
+[51.386387] (robot_description) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[51.395077] (robot_description) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[51.417033] (robot_description) StdoutLine: {'line': b'--   Found libzip, version 1.5.1\n'}
+[51.475164] (-) TimerEvent: {}
+[51.575564] (-) TimerEvent: {}
+[51.601302] (robot_description) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[51.601741] (robot_description) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.17.1\n'}
+[51.602119] (robot_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[51.602531] (robot_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.11.1\n'}
+[51.605598] (robot_description) StdoutLine: {'line': b'-- Gazebo version: 11.15\n'}
+[51.675738] (-) TimerEvent: {}
+[51.776123] (-) TimerEvent: {}
+[51.876510] (-) TimerEvent: {}
+[51.939066] (robot_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[51.976661] (-) TimerEvent: {}
+[52.014950] (robot_description) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[52.021098] (robot_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[52.022543] (robot_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[52.023643] (robot_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[52.027009] (robot_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[52.031540] (robot_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[52.035986] (robot_description) StdoutLine: {'line': b'-- Generating done\n'}
+[52.039062] (robot_description) StdoutLine: {'line': b'-- Build files have been written to: /home/jprl/APS1/APS1/jota_ws1/build/robot_description\n'}
+[52.050903] (robot_description) CommandEnded: {'returncode': 0}
+[52.054448] (robot_description) JobProgress: {'identifier': 'robot_description', 'progress': 'build'}
+[52.054552] (robot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jprl/APS1/APS1/jota_ws1/build/robot_description', '--', '-j12', '-l12'], 'cwd': '/home/jprl/APS1/APS1/jota_ws1/build/robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jprl'), ('GIT_ASKPASS', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jprl'), ('OLDPWD', '/home/jprl/APS1/APS1/jota_ws1'), ('TERM_PROGRAM_VERSION', '1.99.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-20617e8b-c1aa-4867-8d9f-fb22efeb9b7c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jprl'), ('NAME', 'MSI'), ('WSL_INTEROP', '/run/WSL/672_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Program Files (x86)/QuickTime/QTSystem/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Users/Joaop/.local/bin:/mnt/c/Users/Joaop:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Joaop/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/jprl/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b05d43ef9a87dd99.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a849e754ab.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/jprl/APS1/APS1/jota_ws1/build/robot_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/opt/ros/foxy'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[52.076835] (-) TimerEvent: {}
+[52.097282] (robot_description) CommandEnded: {'returncode': 0}
+[52.098075] (robot_description) JobProgress: {'identifier': 'robot_description', 'progress': 'install'}
+[52.100143] (robot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jprl/APS1/APS1/jota_ws1/build/robot_description'], 'cwd': '/home/jprl/APS1/APS1/jota_ws1/build/robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jprl'), ('GIT_ASKPASS', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jprl'), ('OLDPWD', '/home/jprl/APS1/APS1/jota_ws1'), ('TERM_PROGRAM_VERSION', '1.99.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-20617e8b-c1aa-4867-8d9f-fb22efeb9b7c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jprl'), ('NAME', 'MSI'), ('WSL_INTEROP', '/run/WSL/672_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jprl/.vscode-server/bin/4949701c880d4bdb949e3c0e6b400288da7f474b/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Program Files (x86)/QuickTime/QTSystem/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Siemens/NX2212/CAPITALINTEGRATION/capitalnxremote/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/CODESYS/APInstaller/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps/python.exe:/mnt/c/Users/Joaop/anaconda3/Scripts:/mnt/c/Users/Joaop/.local/bin:/mnt/c/Users/Joaop:/mnt/c/Users/Joaop/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Joaop/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/jprl/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jprl/.vscode-server/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b05d43ef9a87dd99.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-a849e754ab.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/jprl/APS1/APS1/jota_ws1/build/robot_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/jprl/APS1/APS1/jota_ws1/install/robot_description:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/opt/ros/foxy'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[52.108701] (robot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[52.108918] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//launch\n'}
+[52.109369] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//launch/robot_simulation.launch.py\n'}
+[52.109706] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//urdf\n'}
+[52.109787] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//urdf/sensors.xacro\n'}
+[52.110611] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//urdf/robot_base.xacro\n'}
+[52.111093] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//urdf/wheels.xacro\n'}
+[52.111551] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//rviz\n'}
+[52.111851] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//rviz/robot_vis.rviz\n'}
+[52.112298] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//rviz/robot_vis.rviz:Zone.Identifier\n'}
+[52.112745] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//world\n'}
+[52.113022] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//world/mundo1.world\n'}
+[52.114277] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description\n'}
+[52.114561] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description\n'}
+[52.115628] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/environment/ament_prefix_path.sh\n'}
+[52.115967] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv\n'}
+[52.116157] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/environment/path.sh\n'}
+[52.116417] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/environment/path.dsv\n'}
+[52.116568] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/local_setup.bash\n'}
+[52.116794] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/local_setup.sh\n'}
+[52.116901] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/local_setup.zsh\n'}
+[52.117079] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/local_setup.dsv\n'}
+[52.117412] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.dsv\n'}
+[52.117516] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/ament_index/resource_index/packages/robot_description\n'}
+[52.117888] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake\n'}
+[52.118036] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake\n'}
+[52.118289] (robot_description) StdoutLine: {'line': b'-- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.xml\n'}
+[52.120640] (robot_description) CommandEnded: {'returncode': 0}
+[52.133352] (robot_description) JobEnded: {'identifier': 'robot_description', 'rc': 0}
+[52.135228] (-) EventReactorShutdown: {}

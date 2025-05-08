@@ -1,0 +1,3 @@
+[console_scripts]
+navigator = rm_navigator.navigator:main
+

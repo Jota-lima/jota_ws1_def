@@ -1,0 +1,49 @@
+running egg_info
+creating ../../build/robot_navigation/robot_navigation.egg-info
+writing ../../build/robot_navigation/robot_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_navigation/robot_navigation.egg-info/dependency_links.txt
+writing entry points to ../../build/robot_navigation/robot_navigation.egg-info/entry_points.txt
+writing requirements to ../../build/robot_navigation/robot_navigation.egg-info/requires.txt
+writing top-level names to ../../build/robot_navigation/robot_navigation.egg-info/top_level.txt
+writing manifest file '../../build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'
+reading manifest file '../../build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build
+creating /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib
+creating /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation
+copying robot_navigation/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation
+copying robot_navigation/navigation_node.py -> /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation
+copying robot_navigation/rotation_server.py -> /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation
+creating /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/utils
+copying robot_navigation/utils/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/utils
+copying robot_navigation/utils/tf_transformations.py -> /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/utils
+running install
+running install_lib
+creating /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation
+copying /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation
+creating /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/utils
+copying /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/utils/__init__.py -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/utils
+copying /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/utils/tf_transformations.py -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/utils
+copying /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/navigation_node.py -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation
+copying /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build/lib/robot_navigation/rotation_server.py -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation
+byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/utils/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/utils/tf_transformations.py to tf_transformations.cpython-38.pyc
+byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/navigation_node.py to navigation_node.cpython-38.pyc
+byte-compiling /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation/rotation_server.py to rotation_server.cpython-38.pyc
+running install_data
+creating /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/ament_index
+creating /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/ament_index/resource_index
+creating /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/ament_index/resource_index/packages
+copying resource/robot_navigation -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/ament_index/resource_index/packages
+copying package.xml -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation
+creating /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/launch
+copying launch/navigation.launch.py -> /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/launch
+running install_egg_info
+Copying ../../build/robot_navigation/robot_navigation.egg-info to /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation-0.0.0-py3.8.egg-info
+running install_scripts
+Installing navigation_node script to /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/robot_navigation
+Installing rotation_server script to /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/robot_navigation
+writing list of installed files to '/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/install.log'

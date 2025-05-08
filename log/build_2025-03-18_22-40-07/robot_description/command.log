@@ -1,6 +1,0 @@
-Invoking command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/jprl/APS1/APS1/jota_ws1/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/jprl/APS1/APS1/jota_ws1/install/robot_description
-Invoked command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/jprl/APS1/APS1/jota_ws1/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/jprl/APS1/APS1/jota_ws1/install/robot_description
-Invoking command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jprl/APS1/APS1/jota_ws1/build/robot_description -- -j12 -l12
-Invoked command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jprl/APS1/APS1/jota_ws1/build/robot_description -- -j12 -l12
-Invoking command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jprl/APS1/APS1/jota_ws1/build/robot_description
-Invoked command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jprl/APS1/APS1/jota_ws1/build/robot_description

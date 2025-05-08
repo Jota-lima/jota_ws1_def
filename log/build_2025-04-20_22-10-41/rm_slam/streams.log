@@ -1,0 +1,20 @@
+[1.321s] Invoking command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_slam': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_slam build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_slam/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_slam/install.log --install-scripts $base/lib/rm_slam --single-version-externally-managed install_data
+[1.600s] running egg_info
+[1.602s] writing ../../build/rm_slam/rm_slam.egg-info/PKG-INFO
+[1.603s] writing dependency_links to ../../build/rm_slam/rm_slam.egg-info/dependency_links.txt
+[1.603s] writing entry points to ../../build/rm_slam/rm_slam.egg-info/entry_points.txt
+[1.603s] writing requirements to ../../build/rm_slam/rm_slam.egg-info/requires.txt
+[1.604s] writing top-level names to ../../build/rm_slam/rm_slam.egg-info/top_level.txt
+[1.644s] reading manifest file '../../build/rm_slam/rm_slam.egg-info/SOURCES.txt'
+[1.646s] writing manifest file '../../build/rm_slam/rm_slam.egg-info/SOURCES.txt'
+[1.646s] running build
+[1.646s] running build_py
+[1.646s] running install
+[1.647s] running install_lib
+[1.649s] running install_data
+[1.649s] running install_egg_info
+[1.651s] removing '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages/rm_slam-0.0.0-py3.8.egg-info' (and everything under it)
+[1.651s] Copying ../../build/rm_slam/rm_slam.egg-info to /home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages/rm_slam-0.0.0-py3.8.egg-info
+[1.653s] running install_scripts
+[1.671s] writing list of installed files to '/home/jprl/APS1/APS1/jota_ws1/build/rm_slam/install.log'
+[1.698s] Invoked command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_slam' returned '0': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_slam build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_slam/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_slam/install.log --install-scripts $base/lib/rm_slam --single-version-externally-managed install_data
