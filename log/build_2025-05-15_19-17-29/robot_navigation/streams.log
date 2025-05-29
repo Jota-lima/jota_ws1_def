@@ -1,0 +1,22 @@
+[1.565s] Invoking command in '/home/jprl/APS1/APS1/jota_ws1/src/robot_navigation': CMAKE_PREFIX_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/home/jprl/APS1/APS1/jota_ws1/install/robot_description PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_navigation build --build-base /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build install --record /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/install.log --install-scripts $base/lib/robot_navigation --single-version-externally-managed install_data
+[1.812s] running egg_info
+[1.813s] writing ../../build/robot_navigation/robot_navigation.egg-info/PKG-INFO
+[1.813s] writing dependency_links to ../../build/robot_navigation/robot_navigation.egg-info/dependency_links.txt
+[1.814s] writing entry points to ../../build/robot_navigation/robot_navigation.egg-info/entry_points.txt
+[1.814s] writing requirements to ../../build/robot_navigation/robot_navigation.egg-info/requires.txt
+[1.814s] writing top-level names to ../../build/robot_navigation/robot_navigation.egg-info/top_level.txt
+[1.852s] reading manifest file '../../build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'
+[1.852s] writing manifest file '../../build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'
+[1.853s] running build
+[1.853s] running build_py
+[1.853s] running install
+[1.854s] running install_lib
+[1.857s] running install_data
+[1.857s] running install_egg_info
+[1.860s] removing '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation-0.0.0-py3.8.egg-info' (and everything under it)
+[1.860s] Copying ../../build/robot_navigation/robot_navigation.egg-info to /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation-0.0.0-py3.8.egg-info
+[1.862s] running install_scripts
+[1.885s] Installing navigation_node script to /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/robot_navigation
+[1.885s] Installing rotation_server script to /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/robot_navigation
+[1.886s] writing list of installed files to '/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/install.log'
+[1.924s] Invoked command in '/home/jprl/APS1/APS1/jota_ws1/src/robot_navigation' returned '0': CMAKE_PREFIX_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:/home/jprl/APS1/APS1/jota_ws1/install/robot_description PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_navigation build --build-base /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build install --record /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/install.log --install-scripts $base/lib/robot_navigation --single-version-externally-managed install_data

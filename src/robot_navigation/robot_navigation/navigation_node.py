@@ -125,7 +125,7 @@ class NavigationNode(Node):
                 
             elapsed_time = time.time() - self.step_start_time
             
-            if elapsed_time < 13:  
+            if elapsed_time < 16:  
                 self.move_forward()
             else:
                 self.stop_robot()

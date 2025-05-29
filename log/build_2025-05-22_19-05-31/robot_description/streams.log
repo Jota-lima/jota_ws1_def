@@ -1,0 +1,30 @@
+[2.286s] Invoking command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/opt/ros/foxy /usr/bin/cmake --build /home/jprl/APS1/APS1/jota_ws1/build/robot_description -- -j12 -l12
+[2.868s] Invoked command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/opt/ros/foxy /usr/bin/cmake --build /home/jprl/APS1/APS1/jota_ws1/build/robot_description -- -j12 -l12
+[2.880s] Invoking command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/opt/ros/foxy /usr/bin/cmake --install /home/jprl/APS1/APS1/jota_ws1/build/robot_description
+[2.972s] -- Install configuration: ""
+[2.972s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//launch
+[2.973s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//launch/robot_simulation.launch.py
+[2.973s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//urdf
+[2.973s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//urdf/sensors.xacro
+[2.973s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//urdf/robot_base.xacro
+[2.973s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//urdf/wheels.xacro
+[2.974s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//rviz
+[2.974s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//rviz/robot_vis.rviz
+[2.974s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//world
+[2.974s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description//world/mundo1.world
+[2.974s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
+[2.974s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
+[2.975s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/environment/ament_prefix_path.sh
+[2.975s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv
+[2.975s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/environment/path.sh
+[2.975s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/environment/path.dsv
+[2.975s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/local_setup.bash
+[2.976s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/local_setup.sh
+[2.976s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/local_setup.zsh
+[2.976s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/local_setup.dsv
+[2.977s] -- Installing: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.dsv
+[2.977s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/ament_index/resource_index/packages/robot_description
+[2.977s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake
+[2.977s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake
+[2.978s] -- Up-to-date: /home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.xml
+[2.984s] Invoked command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization:/opt/ros/foxy /usr/bin/cmake --install /home/jprl/APS1/APS1/jota_ws1/build/robot_description

@@ -1,0 +1,3 @@
+[console_scripts]
+waypoint_publisher = waypoint_navigation_pkg.waypoint_publisher:main
+
