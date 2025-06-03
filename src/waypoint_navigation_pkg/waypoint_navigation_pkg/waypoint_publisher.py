@@ -1,316 +1,266 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
-from nav_msgs.msg import Odometry
-from sensor_msgs.msg import LaserScan
-from geometry_msgs.msg import Twist, PoseStamped
+from nav2_msgs.action import NavigateToPose
+from geometry_msgs.msg import PoseStamped
 from std_srvs.srv import Trigger
-from custom_interfaces.action import Rotate
+from tf2_ros import TransformListener, Buffer
 import math
 import time
 
-
-# Copy of euler_from_quaternion function to avoid dependency issues
-def euler_from_quaternion(quaternion):
-    """
-    Convert quaternion to Euler angles (roll, pitch, yaw).
-    quaternion = [x, y, z, w]
-    """
-    x, y, z, w = quaternion
-    
-    # Roll (x-axis rotation)
-    sinr_cosp = 2 * (w * x + y * z)
-    cosr_cosp = 1 - 2 * (x * x + y * y)
-    roll = math.atan2(sinr_cosp, cosr_cosp)
-    
-    # Pitch (y-axis rotation)
-    sinp = 2 * (w * y - z * x)
-    if abs(sinp) >= 1:
-        pitch = math.copysign(math.pi / 2, sinp)  # Use 90 degrees if out of range
-    else:
-        pitch = math.asin(sinp)
-    
-    # Yaw (z-axis rotation)
-    siny_cosp = 2 * (w * z + x * y)
-    cosy_cosp = 1 - 2 * (y * y + z * z)
-    yaw = math.atan2(siny_cosp, cosy_cosp)
-    
-    return roll, pitch, yaw
 
 class WaypointPublisher(Node):
     def __init__(self):
         super().__init__('waypoint_publisher')
         
-        # Publishers and subscribers
-        self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
-        self.odom_sub = self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
-        self.scan_sub = self.create_subscription(LaserScan, '/scan', self.scan_callback, 10)
+        # Action client for Nav2 navigation
+        self.nav_client = ActionClient(self, NavigateToPose, 'navigate_to_pose')
         
-        # Action client for rotation
-        self.rotation_client = ActionClient(self, Rotate, 'rotate_robot')
+        # TF2 listener para verificar posição atual
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
         
-        # Create the service to start the waypoint sequence
+        # Service to start waypoint navigation
         self.start_service = self.create_service(
             Trigger, 'start_waypoint_navigation', self.start_navigation_callback)
         
-        # Navigation state variables
-        self.step = 0
+        # Waypoints baseados nos pontos que funcionaram no terminal
+        self.waypoints = [
+            # Sala 1 - baseado no primeiro waypoint que funcionou
+            {"x": 3.89, "y": 1.53, "yaw": 0.0, "name": "Sala Principal"},
+            
+            # Cozinha - baseado no segundo waypoint
+            {"x": -1.90, "y": 4.68, "yaw": 1.57, "name": "Cozinha"},
+            
+            # Quarto - explorando área adjacente
+            {"x": 2.0, "y": 4.0, "yaw": 3.14, "name": "Quarto"},
+            
+            # Área de entrada - volta para próximo do ponto inicial
+            {"x": 0.0, "y": 0.0, "yaw": 0.0, "name": "Área de Entrada"}
+        ]
+        
+        # Navigation state
+        self.current_waypoint_index = 0
         self.navigation_active = False
-        self.rotating = False
-        self.forward_speed = 0.2  # m/s
-        self.distance_threshold = 0.5  # m - distance to wall threshold
-        self.min_front_distance = float('inf')
-        self.step_start_time = None
+        self.goal_handle = None
         
-        # Robot state from odometry
-        self.current_x = 0.0
-        self.current_y = 0.0
-        self.current_heading = 0.0  # degrees
+        # Tolerância para considerar que chegou ao waypoint (metros)
+        self.waypoint_tolerance = 0.5  # 50cm de tolerância
         
-        # Create timer for navigation control
-        self.timer = self.create_timer(0.1, self.timer_callback)
+        # Timer para verificar posição periodicamente
+        self.position_check_timer = self.create_timer(1.0, self.check_position_callback)
         
-        self.get_logger().info('Step-based waypoint navigation node initialized')
-        self.get_logger().info('Waiting for start_waypoint_navigation service to be called...')
+        self.get_logger().info('Nav2 Waypoint Publisher initialized')
+        self.get_logger().info(f'Loaded {len(self.waypoints)} waypoints:')
+        for i, wp in enumerate(self.waypoints):
+            self.get_logger().info(f'  {i+1}. {wp["name"]}: ({wp["x"]:.2f}, {wp["y"]:.2f})')
+        self.get_logger().info(f'Waypoint tolerance: {self.waypoint_tolerance}m')
+        self.get_logger().info('Call service: ros2 service call /start_waypoint_navigation std_srvs/srv/Trigger')
     
-    def odom_callback(self, msg):
-        """Process odometry data to track robot position and orientation"""
-        # Get position
-        self.current_x = msg.pose.pose.position.x
-        self.current_y = msg.pose.pose.position.y
-        
-        # Get orientation as Euler angles
-        orientation_q = msg.pose.pose.orientation
-        roll, pitch, yaw = euler_from_quaternion(
-            [orientation_q.x, orientation_q.y, orientation_q.z, orientation_q.w])
-        
-        # Convert to degrees
-        self.current_heading = math.degrees(yaw)
+    def get_robot_position(self):
+        """Obter posição atual do robô usando TF2"""
+        try:
+            # Transformação de base_link para map
+            transform = self.tf_buffer.lookup_transform(
+                'map', 'base_link', rclpy.time.Time(), timeout=rclpy.duration.Duration(seconds=1.0))
+            
+            x = transform.transform.translation.x
+            y = transform.transform.translation.y
+            
+            return x, y
+        except Exception as e:
+            self.get_logger().warn(f'Failed to get robot position: {str(e)}')
+            return None, None
     
-    def scan_callback(self, msg):
-        """Process LaserScan data to detect obstacles in front"""
-        center_idx = len(msg.ranges) // 2
-        front_arc = msg.ranges[center_idx - 10:center_idx + 10]
-        valid_ranges = [r for r in front_arc if not math.isnan(r) and not math.isinf(r)]
-        self.min_front_distance = min(valid_ranges) if valid_ranges else float('inf')
+    def calculate_distance(self, x1, y1, x2, y2):
+        """Calcular distância euclidiana entre dois pontos"""
+        return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
     
-    def start_navigation_callback(self, request, response):
-        """Service callback to start navigation sequence"""
-        self.get_logger().info('Starting step-based navigation sequence')
-        self.navigation_active = True
-        self.step = 1
-        return response
-    
-    def timer_callback(self):
+    def check_position_callback(self):
+        """Timer callback para verificar se chegou ao waypoint"""
         if not self.navigation_active:
             return
-            
-        if self.step == 1:  
-            if self.min_front_distance < self.distance_threshold:
-                self.stop_robot()
-                self.get_logger().info('=== Step 1: Wall detected ===')
-                self.step += 1
-            else:
-                self.move_forward()
         
-        elif self.step == 2:  
-            if not self.rotating:
-                self.get_logger().info('=== Step 2: Starting 180-degree rotation ===')
-                self.rotate_robot(185.0)
-                
-        elif self.step == 3:  
-            if self.min_front_distance < self.distance_threshold and not self.rotating:
-                self.stop_robot()
-                self.get_logger().info('=== Step 3: Wall detected ===')
-                self.step += 1
-            else:
-                self.move_forward()
-
-        elif self.step == 4: 
-            if not self.rotating:
-                self.get_logger().info('=== Step 4: Starting 180-degree rotation ===')
-                self.rotate_robot(185.0)
-
-        elif self.step == 5:  
-            if self.step_start_time is None:
-                self.step_start_time = time.time()  
-                
-            elapsed_time = time.time() - self.step_start_time
-            
-            if elapsed_time < 17.0:  
-                self.move_forward()
-            else:
-                self.stop_robot()
-                self.get_logger().info('=== Step 5: Time limit reached (17s) ===')
-                self.step_start_time = None  
-                self.step += 1
-
-        elif self.step == 6: 
-            if not self.rotating:
-                self.get_logger().info('=== Step 6: Starting 90-degree rotation ===')
-                self.rotate_robot(95.0)
-                
-        elif self.step == 7:  
-            if self.step_start_time is None:
-                self.step_start_time = time.time()  
-                
-            elapsed_time = time.time() - self.step_start_time
-            
-            if elapsed_time < 15: 
-                self.move_forward()
-            else:
-                self.stop_robot()
-                self.get_logger().info('=== Step 7: Time limit reached (15s) ===')
-                self.step_start_time = None  
-                self.step += 1
-        
-        elif self.step == 8:  
-            if not self.rotating:
-                self.get_logger().info('=== Step 8: Starting 90-degree rotation ===')
-                self.rotate_robot(-95.0)
-
-        elif self.step == 9:  
-            if self.step_start_time is None:
-                self.step_start_time = time.time()  
-                
-            elapsed_time = time.time() - self.step_start_time
-            
-            if elapsed_time < 13:  
-                self.move_forward()
-            else:
-                self.stop_robot()
-                self.get_logger().info('=== Step 9: Time limit reached (13s) ===')
-                self.step_start_time = None  
-                self.step += 1
-
-        elif self.step == 10:  
-            if not self.rotating:
-                self.get_logger().info('=== Step 10: Starting 90-degree rotation ===')
-                self.rotate_robot(95.0)
-
-        elif self.step == 11: 
-            if self.min_front_distance < self.distance_threshold and not self.rotating:
-                self.stop_robot()
-                self.get_logger().info('=== Step 11: Wall detected ===')
-                self.step += 1
-            else:
-                self.move_forward()
-        
-        elif self.step == 12: 
-            if not self.rotating:
-                self.get_logger().info('=== Step 12: Starting 180-degree rotation ===')
-                self.rotate_robot(-185.0)
-
-        elif self.step == 13: 
-            if self.min_front_distance < self.distance_threshold and not self.rotating:
-                self.stop_robot()
-                self.get_logger().info('=== Step 13: Wall detected ===')
-                self.step += 1
-            else:
-                self.move_forward()
-
-        elif self.step == 14: 
-            if not self.rotating:
-                self.get_logger().info('=== Step 14: Starting 90-degree rotation ===')
-                self.rotate_robot(-95.0) 
-            
-        elif self.step == 15:  
-            if self.step_start_time is None:
-                self.step_start_time = time.time()  
-                
-            elapsed_time = time.time() - self.step_start_time
-            
-            if elapsed_time < 25:  
-                self.move_forward()
-            else:
-                self.stop_robot()
-                self.get_logger().info('=== Step 15: Time limit reached (25s) ===')
-                self.step_start_time = None  
-                self.step += 1
-
-        elif self.step == 16:  
-            if not self.rotating:
-                self.get_logger().info('=== Step 16: Starting 90-degree rotation ===')
-                self.rotate_robot(-95.0)
-
-        elif self.step == 17: 
-            if self.min_front_distance < self.distance_threshold and not self.rotating:
-                self.stop_robot()
-                self.get_logger().info('=== Step 17: Wall detected ===')
-                self.step += 1
-            else:
-                self.move_forward()
-
-        elif self.step == 18:  
-            self.get_logger().info('=== Navigation sequence completed ===')
-            self.navigation_active = False
-    
-    def rotate_robot(self, degrees):
-        """Use the rotation action server to rotate the robot"""
-        if self.rotating:
+        # Obter posição atual
+        robot_x, robot_y = self.get_robot_position()
+        if robot_x is None or robot_y is None:
             return
-            
-        self.rotating = True
-        self.stop_robot()
-        time.sleep(0.5)
         
-        goal_msg = Rotate.Goal()
-        goal_msg.angle_degrees = float(degrees)
+        # Verificar distância até o waypoint atual
+        current_wp = self.waypoints[self.current_waypoint_index]
+        distance = self.calculate_distance(robot_x, robot_y, current_wp["x"], current_wp["y"])
         
-        self.get_logger().info(f'Sending rotation goal: {degrees:.1f} degrees')
+        # Log da posição atual ocasionalmente
+        if hasattr(self, '_position_log_counter'):
+            self._position_log_counter += 1
+        else:
+            self._position_log_counter = 1
         
-        # Wait for the action server
-        try:
-            self.rotation_client.wait_for_server(timeout_sec=2.0)
-            self.send_goal_future = self.rotation_client.send_goal_async(
-                goal_msg,
-                feedback_callback=self.feedback_callback
-            )
-            self.send_goal_future.add_done_callback(self.goal_response_callback)
-        except Exception as e:
-            self.get_logger().error(f'Failed to send rotation goal: {str(e)}')
-            self.rotating = False
+        if self._position_log_counter % 5 == 0:  # A cada 5 segundos
+            self.get_logger().info(
+                f'Current position: ({robot_x:.2f}, {robot_y:.2f}) | '
+                f'Target: ({current_wp["x"]:.2f}, {current_wp["y"]:.2f}) | '
+                f'Distance: {distance:.2f}m')
     
-    def move_forward(self):
-        """Move robot forward at constant speed"""
-        cmd = Twist()
-        cmd.linear.x = self.forward_speed
-        self.cmd_vel_pub.publish(cmd)
+    def start_navigation_callback(self, request, response):
+        """Service callback to start waypoint navigation sequence"""
+        if self.navigation_active:
+            response.success = False
+            response.message = "Navigation already in progress"
+            return response
+        
+        self.get_logger().info('=== Starting Nav2 waypoint navigation sequence ===')
+        self.current_waypoint_index = 0
+        self.navigation_active = True
+        
+        # Wait for Nav2 action server
+        if not self.nav_client.wait_for_server(timeout_sec=5.0):
+            self.get_logger().error('Nav2 action server not available!')
+            response.success = False
+            response.message = "Nav2 action server not available"
+            self.navigation_active = False
+            return response
+        
+        # Start with first waypoint
+        self.send_next_waypoint()
+        
+        response.success = True
+        response.message = f"Started navigation sequence with {len(self.waypoints)} waypoints"
+        return response
     
-    def stop_robot(self):
-        """Stop robot movement"""
-        cmd = Twist()
-        self.cmd_vel_pub.publish(cmd)
+    def send_next_waypoint(self):
+        """Send next waypoint in sequence to Nav2"""
+        if self.current_waypoint_index >= len(self.waypoints):
+            self.get_logger().info('=== All waypoints completed! Navigation sequence finished ===')
+            self.navigation_active = False
+            return
+        
+        # Get current waypoint
+        waypoint = self.waypoints[self.current_waypoint_index]
+        
+        # Create Nav2 goal
+        goal_msg = NavigateToPose.Goal()
+        goal_msg.pose = self.create_pose_stamped(
+            waypoint["x"], waypoint["y"], waypoint["yaw"])
+        
+        self.get_logger().info(
+            f'=== Waypoint {self.current_waypoint_index + 1}/{len(self.waypoints)}: '
+            f'{waypoint["name"]} ===')
+        self.get_logger().info(
+            f'Navigating to: ({waypoint["x"]:.2f}, {waypoint["y"]:.2f}, '
+            f'{math.degrees(waypoint["yaw"]):.0f}°)')
+        
+        # Send goal to Nav2
+        self.send_goal_future = self.nav_client.send_goal_async(
+            goal_msg, feedback_callback=self.feedback_callback)
+        self.send_goal_future.add_done_callback(self.goal_response_callback)
+    
+    def create_pose_stamped(self, x, y, yaw):
+        """Create a PoseStamped message for Nav2"""
+        pose = PoseStamped()
+        pose.header.frame_id = 'map'
+        pose.header.stamp = self.get_clock().now().to_msg()
+        
+        # Position
+        pose.pose.position.x = float(x)
+        pose.pose.position.y = float(y)
+        pose.pose.position.z = 0.0
+        
+        # Orientation (convert yaw to quaternion)
+        pose.pose.orientation.x = 0.0
+        pose.pose.orientation.y = 0.0
+        pose.pose.orientation.z = math.sin(yaw / 2.0)
+        pose.pose.orientation.w = math.cos(yaw / 2.0)
+        
+        return pose
+    
+    def goal_response_callback(self, future):
+        """Handle Nav2 goal response"""
+        goal_handle = future.result()
+        
+        if not goal_handle.accepted:
+            self.get_logger().error('=== Waypoint goal rejected by Nav2! ===')
+            self.navigation_active = False
+            return
+        
+        self.get_logger().info('=== Waypoint goal accepted by Nav2 ===')
+        self.goal_handle = goal_handle
+        
+        # Wait for result
+        self.get_result_future = goal_handle.get_result_async()
+        self.get_result_future.add_done_callback(self.result_callback)
     
     def feedback_callback(self, feedback_msg):
-        """Handle rotation feedback"""
-        if feedback_msg.feedback.remaining_degrees % 90 < 1:
-            self.get_logger().info(f'=== Rotation remaining: {feedback_msg.feedback.remaining_degrees:.0f} degrees ===')
-
-    def goal_response_callback(self, future):
-        """Handle rotation goal response"""
-        goal_handle = future.result()
-        if not goal_handle.accepted:
-            self.get_logger().error('Rotation goal was rejected!')
-            self.rotating = False
-            return
-        self.get_logger().info('=== Rotation goal accepted ===')
-        self.get_result_future = goal_handle.get_result_async()
-        self.get_result_future.add_done_callback(self.get_result_callback)
-
-    def get_result_callback(self, future):
-        """Handle rotation result"""
+        """Handle Nav2 navigation feedback"""
+        # Log progress occasionally (every 50 feedback messages to avoid spam)
+        if hasattr(self, '_feedback_counter'):
+            self._feedback_counter += 1
+        else:
+            self._feedback_counter = 1
+        
+        if self._feedback_counter % 50 == 0:
+            current_wp = self.waypoints[self.current_waypoint_index]
+            self.get_logger().info(f'Navigating to {current_wp["name"]}... (progress update)')
+    
+    def result_callback(self, future):
+        """Handle Nav2 navigation result"""
         try:
             result = future.result().result
-            if result.success:
-                self.get_logger().info('=== Rotation completed successfully ===')
-                time.sleep(1.0)
-                self.step += 1
+            current_wp = self.waypoints[self.current_waypoint_index]
+            
+            # VERIFICAÇÃO ADICIONAL: Confirmar se realmente chegou ao waypoint
+            robot_x, robot_y = self.get_robot_position()
+            
+            if robot_x is not None and robot_y is not None:
+                distance = self.calculate_distance(
+                    robot_x, robot_y, current_wp["x"], current_wp["y"])
+                
+                self.get_logger().info(
+                    f'Nav2 result received. Distance to target: {distance:.2f}m '
+                    f'(tolerance: {self.waypoint_tolerance}m)')
+                
+                # Verificar se realmente chegou ao destino
+                if distance <= self.waypoint_tolerance:
+                    self.get_logger().info(
+                        f'=== ✅ Reached {current_wp["name"]} successfully! '
+                        f'(Distance: {distance:.2f}m) ===')
+                    
+                    # Brief pause at waypoint
+                    time.sleep(2.0)
+                    
+                    # Move to next waypoint
+                    self.current_waypoint_index += 1
+                    self.send_next_waypoint()
+                    
+                else:
+                    self.get_logger().warn(
+                        f'=== ⚠️  Nav2 says reached {current_wp["name"]}, but robot is '
+                        f'{distance:.2f}m away (tolerance: {self.waypoint_tolerance}m) ===')
+                    
+                    # Tentar novamente o mesmo waypoint
+                    self.get_logger().info(f'=== 🔄 Retrying waypoint {current_wp["name"]} ===')
+                    time.sleep(1.0)
+                    self.send_next_waypoint()  # Reenvia o mesmo waypoint
+                    return
+                    
             else:
-                self.get_logger().warn('=== Rotation failed ===')
+                self.get_logger().error(f'=== Failed to get robot position for verification ===')
+                # Se não conseguir verificar posição, assume que chegou
+                self.get_logger().info(f'=== Reached {current_wp["name"]} (no position verification) ===')
+                self.current_waypoint_index += 1
+                time.sleep(2.0)
+                self.send_next_waypoint()
+                
         except Exception as e:
-            self.get_logger().error(f'Error getting rotation result: {str(e)}')
-        self.rotating = False
+            self.get_logger().error(f'Error processing navigation result: {str(e)}')
+            self.navigation_active = False
+    
+    def cancel_navigation(self):
+        """Cancel current navigation if active"""
+        if self.navigation_active and self.goal_handle:
+            self.get_logger().info('=== Canceling current navigation ===')
+            cancel_future = self.goal_handle.cancel_goal_async()
+            self.navigation_active = False
 
 
 def main(args=None):
@@ -320,8 +270,8 @@ def main(args=None):
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        node.stop_robot()
-        pass
+        node.get_logger().info('=== Shutting down waypoint navigation ===')
+        node.cancel_navigation()
     
     node.destroy_node()
     rclpy.shutdown()

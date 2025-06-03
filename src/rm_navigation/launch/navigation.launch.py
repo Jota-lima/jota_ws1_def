@@ -178,24 +178,44 @@ def generate_launch_description():
             remappings=remappings
         ),
         
-        # AMCL
+        # AMCL com tf_broadcast = False para não conflitar
         Node(
             package='nav2_amcl',
             executable='amcl',
             name='amcl',
             output='screen',
-            parameters=[params_path],
+            parameters=[
+                {'use_sim_time': True},
+                {'set_initial_pose': True},
+                {'initial_pose.x': 0.0},
+                {'initial_pose.y': 0.0},
+                {'initial_pose.z': 0.0},
+                {'initial_pose.yaw': 0.0},
+                {'transform_tolerance': 3.0},
+                {'tf_broadcast': False},  # MUDANÇA: False para não conflitar
+                {'global_frame_id': 'map'},
+                {'odom_frame_id': 'odom'},
+                {'base_frame_id': 'base_link'},
+                {'scan_topic': '/scan'},
+                {'laser_model_type': 'likelihood_field'},
+                {'laser_likelihood_max_dist': 2.0},
+                {'min_particles': 500},
+                {'max_particles': 2000}
+            ],
             remappings=remappings
         ),
         
-        # 4. NÃO INICIE O EKF - O DIFFERENTIAL DRIVE CONTROLLER DO GAZEBO JÁ PUBLICA ODOMETRIA
-        # Se você quiser usar EKF, remova a transformação estática odom->base_link acima
-        # e descomente o bloco abaixo
-        # IncludeLaunchDescription(
-        #     PythonLaunchDescriptionSource(
-        #         os.path.join(localization_dir, 'launch', 'ekf.launch.py')
-        #     ),
-        # ),
+        # 4. EKF NODE - DIRETO NO LAUNCH
+        Node(
+            package='robot_localization',
+            executable='ekf_node',
+            name='ekf_filter_node',
+            output='screen',
+            parameters=[
+                {'use_sim_time': use_sim_time},
+                os.path.join(localization_dir, 'config', 'ekf_config.yaml')
+            ]
+        ),
         
         # 5. LIFECYCLE MANAGER PARA LOCALIZAÇÃO
         Node(
