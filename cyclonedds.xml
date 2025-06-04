@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<CycloneDDS xmlns="https://cdds.io/config">
+<CycloneDX xmlns="https://github.com/eclipse-cyclonedx/cyclonedx"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="https://github.com/eclipse-cyclonedx/cyclonedx
+           https://github.com/eclipse-cyclonedx/cyclonedx/Domain/Discovery.xml">
     <Domain id="any">
         <General>
             <NetworkInterfaceAddress>auto</NetworkInterfaceAddress>
             <AllowMulticast>true</AllowMulticast>
-            <EnableMulticastLoopback>true</EnableMulticastLoopback>
+            <MaxMessageSize>65000</MaxMessageSize>
         </General>
-        <Discovery>
-            <ParticipantIndex>auto</ParticipantIndex>
-            <MaxAutoParticipantIndex>120</MaxAutoParticipantIndex>
-        </Discovery>
+        <Scheduling>
+            <WorkerThreads>auto</WorkerThreads>
+        </Scheduling>
     </Domain>
-</CycloneDDS>
+</CycloneDX>

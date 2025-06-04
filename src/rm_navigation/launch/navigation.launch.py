@@ -192,7 +192,7 @@ def generate_launch_description():
                 {'initial_pose.z': 0.0},
                 {'initial_pose.yaw': 0.0},
                 {'transform_tolerance': 3.0},
-                {'tf_broadcast': False},  # MUDANÇA: False para não conflitar
+                {'tf_broadcast': True},  # MUDANÇA: False para não conflitar
                 {'global_frame_id': 'map'},
                 {'odom_frame_id': 'odom'},
                 {'base_frame_id': 'base_link'},

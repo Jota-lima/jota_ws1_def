@@ -1,5 +1,7 @@
 /home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages/rm_navigation/__init__.py
+/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages/rm_navigation/initial_pose_publisher.py
 /home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages/rm_navigation/__pycache__/__init__.cpython-38.pyc
+/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages/rm_navigation/__pycache__/initial_pose_publisher.cpython-38.pyc
 /home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/ament_index/resource_index/packages/rm_navigation
 /home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/package.xml
 /home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/launch/navigation.launch.py
@@ -11,3 +13,4 @@
 /home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages/rm_navigation-0.0.0-py3.8.egg-info/requires.txt
 /home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages/rm_navigation-0.0.0-py3.8.egg-info/entry_points.txt
 /home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages/rm_navigation-0.0.0-py3.8.egg-info/SOURCES.txt
+/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/rm_navigation/initial_pose_publisher

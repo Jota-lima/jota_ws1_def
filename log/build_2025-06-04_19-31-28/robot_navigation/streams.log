@@ -1,0 +1,22 @@
+[2.094s] Invoking command in '/home/jprl/APS1/APS1/jota_ws1/src/robot_navigation': AMENT_PREFIX_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces LD_LIBRARY_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_navigation build --build-base /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build install --record /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/install.log --install-scripts $base/lib/robot_navigation --single-version-externally-managed install_data
+[2.388s] running egg_info
+[2.389s] writing ../../build/robot_navigation/robot_navigation.egg-info/PKG-INFO
+[2.389s] writing dependency_links to ../../build/robot_navigation/robot_navigation.egg-info/dependency_links.txt
+[2.390s] writing entry points to ../../build/robot_navigation/robot_navigation.egg-info/entry_points.txt
+[2.390s] writing requirements to ../../build/robot_navigation/robot_navigation.egg-info/requires.txt
+[2.390s] writing top-level names to ../../build/robot_navigation/robot_navigation.egg-info/top_level.txt
+[2.437s] reading manifest file '../../build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'
+[2.439s] writing manifest file '../../build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'
+[2.439s] running build
+[2.439s] running build_py
+[2.440s] running install
+[2.441s] running install_lib
+[2.443s] running install_data
+[2.444s] running install_egg_info
+[2.445s] removing '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation-0.0.0-py3.8.egg-info' (and everything under it)
+[2.446s] Copying ../../build/robot_navigation/robot_navigation.egg-info to /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages/robot_navigation-0.0.0-py3.8.egg-info
+[2.448s] running install_scripts
+[2.472s] Installing navigation_node script to /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/robot_navigation
+[2.472s] Installing rotation_server script to /home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/robot_navigation
+[2.472s] writing list of installed files to '/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/install.log'
+[2.507s] Invoked command in '/home/jprl/APS1/APS1/jota_ws1/src/robot_navigation' returned '0': AMENT_PREFIX_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces LD_LIBRARY_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_navigation build --build-base /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build install --record /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/install.log --install-scripts $base/lib/robot_navigation --single-version-externally-managed install_data

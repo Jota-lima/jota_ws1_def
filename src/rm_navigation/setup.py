@@ -25,6 +25,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'initial_pose_publisher = rm_navigation.initial_pose_publisher:main',
         ],
     },
 )
