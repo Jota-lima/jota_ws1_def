@@ -1,65 +1,57 @@
-version: '3.8'
-
-networks:
-  ros_network:
-    driver: bridge
+version: '3.3'
 
 services:
-  # Serviço base para todos os nós ROS
-  ros_base:
+  # Serviço de Localização (AMCL + EKF)
+  localization:
     build: 
       context: .
       dockerfile: Dockerfile
     stdin_open: true
     tty: true
+    network_mode: host
     ipc: host
     privileged: true
-    networks:
-      - ros_network
+    container_name: nav2_localization
     volumes:
-      - ./cyclonedx.xml:/cyclonedx.xml
+      - ./cyclonedds.xml:/cyclonedds.xml:ro
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
-      - ros_logs:/var/log/ros
     environment:
       - ROS_DOMAIN_ID=30
-      - CYCLONEDX_URI=file:///cyclonedx.xml
+      - CYCLONEDDS_URI=file:///cyclonedds.xml
       - DISPLAY=${DISPLAY}
       - RMW_IMPLEMENTATION=rmw_cyclonedx_cpp
-    
-  # Bridge ROS para comunicação entre contêineres
-  ros_bridge:
-    extends: ros_base
-    container_name: ros2_bridge
-    command: >
-      bash -c "
-      source /opt/ros/foxy/setup.bash &&
-      ros2 daemon start &&
-      sleep infinity"
-    restart: unless-stopped
-
-  # Serviço de Localização (AMCL + EKF)
-  localization:
-    extends: ros_base
-    container_name: ros2_localization
     command: >
       bash -c "
       source /opt/ros/foxy/setup.bash &&
       source /workspace/install/setup.bash &&
       sleep 5 &&
       ros2 launch rm_localization localization.launch.py"
-    depends_on:
-      - ros_bridge
     restart: unless-stopped
 
   # Serviço de Navegação (Nav2 Stack)
   navigation:
-    extends: ros_base
-    container_name: ros2_navigation
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    network_mode: host
+    ipc: host
+    privileged: true
+    container_name: nav2_navigation
+    volumes:
+      - ./cyclonedds.xml:/cyclonedds.xml:ro
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    environment:
+      - ROS_DOMAIN_ID=30
+      - CYCLONEDDS_URI=file:///cyclonedds.xml
+      - DISPLAY=${DISPLAY}
+      - RMW_IMPLEMENTATION=rmw_cyclonedx_cpp
     command: >
       bash -c "
       source /opt/ros/foxy/setup.bash &&
       source /workspace/install/setup.bash &&
-      sleep 10 &&
+      sleep 15 &&
       ros2 launch rm_navigation navigation.launch.py"
     depends_on:
       - localization
@@ -67,39 +59,36 @@ services:
 
   # Serviço do Publicador de Waypoints
   waypoint_follower:
-    extends: ros_base
-    container_name: ros2_waypoint_follower
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    network_mode: host
+    ipc: host
+    privileged: true
+    container_name: nav2_waypoint_follower
+    volumes:
+      - ./cyclonedds.xml:/cyclonedds.xml:ro
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    environment:
+      - ROS_DOMAIN_ID=30
+      - CYCLONEDDS_URI=file:///cyclonedds.xml
+      - DISPLAY=${DISPLAY}
+      - RMW_IMPLEMENTATION=rmw_cyclonedx_cpp
     command: >
       bash -c "
       source /opt/ros/foxy/setup.bash &&
       source /workspace/install/setup.bash &&
-      sleep 15 &&
+      sleep 25 &&
+      echo 'Waypoint service ready!' &&
+      echo 'Call: ros2 service call /start_waypoint_navigation std_srvs/srv/Trigger' &&
       ros2 run waypoint_navigation_pkg waypoint_publisher"
     depends_on:
       - navigation
     restart: unless-stopped
 
-  # Serviço para monitoramento (opcional)
-  monitoring:
-    extends: ros_base
-    container_name: ros2_monitoring
-    command: >
-      bash -c "
-      source /opt/ros/foxy/setup.bash &&
-      source /workspace/install/setup.bash &&
-      sleep 20 &&
-      echo '=== ROS 2 Services Available ===' &&
-      ros2 service list &&
-      echo '=== ROS 2 Topics Available ===' &&
-      ros2 topic list &&
-      echo '=== Waiting for manual waypoint trigger ===' &&
-      echo 'Call: ros2 service call /start_waypoint_navigation std_srvs/srv/Trigger' &&
-      sleep infinity"
-    depends_on:
-      - waypoint_follower
-    restart: unless-stopped
-
-# Volumes para persistência
+# Volumes para logs
 volumes:
-  ros_logs:
+  ros2_logs:
     driver: local

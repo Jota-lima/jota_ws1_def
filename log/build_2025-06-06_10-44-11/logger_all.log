@@ -1,0 +1,520 @@
+[0.691s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.691s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74badd6e9070>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74badd6e9070>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x74badd6e97f0>)
+[0.925s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.925s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.925s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.925s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.925s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.925s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.925s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jprl/APS1/APS1/jota_ws1'
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ignore'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ignore_ament_install'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['colcon_pkg']
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'colcon_pkg'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['colcon_meta']
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'colcon_meta'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['ros']
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ros'
+[0.956s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_interfaces' with type 'ros.ament_cmake' and name 'custom_interfaces'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extension 'ignore'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extension 'ignore_ament_install'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extensions ['colcon_pkg']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extension 'colcon_pkg'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extensions ['colcon_meta']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extension 'colcon_meta'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extensions ['ros']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extension 'ros'
+[0.959s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_localization' with type 'ros.ament_python' and name 'rm_localization'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'ignore'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'ignore_ament_install'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['colcon_pkg']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'colcon_pkg'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['colcon_meta']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'colcon_meta'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['ros']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'ros'
+[0.962s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_navigation' with type 'ros.ament_python' and name 'rm_navigation'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigator) by extensions ['ignore', 'ignore_ament_install']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigator) by extension 'ignore'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigator) by extension 'ignore_ament_install'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigator) by extensions ['colcon_pkg']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigator) by extension 'colcon_pkg'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigator) by extensions ['colcon_meta']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigator) by extension 'colcon_meta'
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigator) by extensions ['ros']
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigator) by extension 'ros'
+[0.965s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_navigator' with type 'ros.ament_python' and name 'rm_navigator'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_slam) by extensions ['ignore', 'ignore_ament_install']
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_slam) by extension 'ignore'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_slam) by extension 'ignore_ament_install'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_slam) by extensions ['colcon_pkg']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_slam) by extension 'colcon_pkg'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_slam) by extensions ['colcon_meta']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_slam) by extension 'colcon_meta'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_slam) by extensions ['ros']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_slam) by extension 'ros'
+[0.968s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_slam' with type 'ros.ament_python' and name 'rm_slam'
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore_ament_install'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_pkg']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_pkg'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_meta']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_meta'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ros']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ros'
+[0.970s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_description' with type 'ros.ament_cmake' and name 'robot_description'
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'ignore'
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'ignore_ament_install'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['colcon_pkg']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'colcon_pkg'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['colcon_meta']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'colcon_meta'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['ros']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'ros'
+[0.972s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_navigation' with type 'ros.ament_python' and name 'robot_navigation'
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/waypoint_navigation_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/waypoint_navigation_pkg) by extension 'ignore'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/waypoint_navigation_pkg) by extension 'ignore_ament_install'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/waypoint_navigation_pkg) by extensions ['colcon_pkg']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/waypoint_navigation_pkg) by extension 'colcon_pkg'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/waypoint_navigation_pkg) by extensions ['colcon_meta']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/waypoint_navigation_pkg) by extension 'colcon_meta'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/waypoint_navigation_pkg) by extensions ['ros']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/waypoint_navigation_pkg) by extension 'ros'
+[0.975s] DEBUG:colcon.colcon_core.package_identification:Package 'src/waypoint_navigation_pkg' with type 'ros.ament_python' and name 'waypoint_navigation_pkg'
+[0.975s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.976s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.976s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.976s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.976s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.021s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.021s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.027s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 375 installed packages in /opt/ros/foxy
+[1.029s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.138s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.138s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.138s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.138s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.138s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.138s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.139s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.139s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.139s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.139s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces', 'merge_install': False, 'path': '/home/jprl/APS1/APS1/jota_ws1/src/custom_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.139s] Level 5:colcon.colcon_core.verb:set package 'rm_localization' build argument 'cmake_args' from command line to 'None'
+[1.139s] Level 5:colcon.colcon_core.verb:set package 'rm_localization' build argument 'cmake_target' from command line to 'None'
+[1.139s] Level 5:colcon.colcon_core.verb:set package 'rm_localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.139s] Level 5:colcon.colcon_core.verb:set package 'rm_localization' build argument 'cmake_clean_cache' from command line to 'False'
+[1.139s] Level 5:colcon.colcon_core.verb:set package 'rm_localization' build argument 'cmake_clean_first' from command line to 'False'
+[1.139s] Level 5:colcon.colcon_core.verb:set package 'rm_localization' build argument 'cmake_force_configure' from command line to 'False'
+[1.139s] Level 5:colcon.colcon_core.verb:set package 'rm_localization' build argument 'ament_cmake_args' from command line to 'None'
+[1.139s] Level 5:colcon.colcon_core.verb:set package 'rm_localization' build argument 'catkin_cmake_args' from command line to 'None'
+[1.139s] Level 5:colcon.colcon_core.verb:set package 'rm_localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.139s] DEBUG:colcon.colcon_core.verb:Building package 'rm_localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jprl/APS1/APS1/jota_ws1/build/rm_localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization', 'merge_install': False, 'path': '/home/jprl/APS1/APS1/jota_ws1/src/rm_localization', 'symlink_install': False, 'test_result_base': None}
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'cmake_args' from command line to 'None'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'cmake_target' from command line to 'None'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.140s] DEBUG:colcon.colcon_core.verb:Building package 'rm_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jprl/APS1/APS1/jota_ws1/build/rm_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation', 'merge_install': False, 'path': '/home/jprl/APS1/APS1/jota_ws1/src/rm_navigation', 'symlink_install': False, 'test_result_base': None}
+[1.141s] Level 5:colcon.colcon_core.verb:set package 'rm_navigator' build argument 'cmake_args' from command line to 'None'
+[1.141s] Level 5:colcon.colcon_core.verb:set package 'rm_navigator' build argument 'cmake_target' from command line to 'None'
+[1.141s] Level 5:colcon.colcon_core.verb:set package 'rm_navigator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.141s] Level 5:colcon.colcon_core.verb:set package 'rm_navigator' build argument 'cmake_clean_cache' from command line to 'False'
+[1.141s] Level 5:colcon.colcon_core.verb:set package 'rm_navigator' build argument 'cmake_clean_first' from command line to 'False'
+[1.141s] Level 5:colcon.colcon_core.verb:set package 'rm_navigator' build argument 'cmake_force_configure' from command line to 'False'
+[1.141s] Level 5:colcon.colcon_core.verb:set package 'rm_navigator' build argument 'ament_cmake_args' from command line to 'None'
+[1.141s] Level 5:colcon.colcon_core.verb:set package 'rm_navigator' build argument 'catkin_cmake_args' from command line to 'None'
+[1.141s] Level 5:colcon.colcon_core.verb:set package 'rm_navigator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.141s] DEBUG:colcon.colcon_core.verb:Building package 'rm_navigator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jprl/APS1/APS1/jota_ws1/build/rm_navigator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator', 'merge_install': False, 'path': '/home/jprl/APS1/APS1/jota_ws1/src/rm_navigator', 'symlink_install': False, 'test_result_base': None}
+[1.141s] Level 5:colcon.colcon_core.verb:set package 'rm_slam' build argument 'cmake_args' from command line to 'None'
+[1.141s] Level 5:colcon.colcon_core.verb:set package 'rm_slam' build argument 'cmake_target' from command line to 'None'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'rm_slam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'rm_slam' build argument 'cmake_clean_cache' from command line to 'False'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'rm_slam' build argument 'cmake_clean_first' from command line to 'False'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'rm_slam' build argument 'cmake_force_configure' from command line to 'False'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'rm_slam' build argument 'ament_cmake_args' from command line to 'None'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'rm_slam' build argument 'catkin_cmake_args' from command line to 'None'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'rm_slam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.142s] DEBUG:colcon.colcon_core.verb:Building package 'rm_slam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jprl/APS1/APS1/jota_ws1/build/rm_slam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam', 'merge_install': False, 'path': '/home/jprl/APS1/APS1/jota_ws1/src/rm_slam', 'symlink_install': False, 'test_result_base': None}
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_args' from command line to 'None'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target' from command line to 'None'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.142s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.143s] DEBUG:colcon.colcon_core.verb:Building package 'robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jprl/APS1/APS1/jota_ws1/build/robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jprl/APS1/APS1/jota_ws1/install/robot_description', 'merge_install': False, 'path': '/home/jprl/APS1/APS1/jota_ws1/src/robot_description', 'symlink_install': False, 'test_result_base': None}
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'waypoint_navigation_pkg' build argument 'cmake_args' from command line to 'None'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'waypoint_navigation_pkg' build argument 'cmake_target' from command line to 'None'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'waypoint_navigation_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'waypoint_navigation_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'waypoint_navigation_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'waypoint_navigation_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'waypoint_navigation_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'waypoint_navigation_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[1.143s] Level 5:colcon.colcon_core.verb:set package 'waypoint_navigation_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.143s] DEBUG:colcon.colcon_core.verb:Building package 'waypoint_navigation_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jprl/APS1/APS1/jota_ws1/build/waypoint_navigation_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg', 'merge_install': False, 'path': '/home/jprl/APS1/APS1/jota_ws1/src/waypoint_navigation_pkg', 'symlink_install': False, 'test_result_base': None}
+[1.144s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_args' from command line to 'None'
+[1.144s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_target' from command line to 'None'
+[1.144s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.144s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[1.144s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[1.144s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[1.144s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[1.144s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[1.144s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.144s] DEBUG:colcon.colcon_core.verb:Building package 'robot_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation', 'merge_install': False, 'path': '/home/jprl/APS1/APS1/jota_ws1/src/robot_navigation', 'symlink_install': False, 'test_result_base': None}
+[1.144s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.146s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.146s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jprl/APS1/APS1/jota_ws1/src/custom_interfaces' with build type 'ament_cmake'
+[1.147s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jprl/APS1/APS1/jota_ws1/src/custom_interfaces'
+[1.153s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.153s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.153s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.162s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jprl/APS1/APS1/jota_ws1/src/rm_localization' with build type 'ament_python'
+[1.162s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_localization', 'ament_prefix_path')
+[1.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/hook/ament_prefix_path.ps1'
+[1.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/hook/ament_prefix_path.dsv'
+[1.169s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/hook/ament_prefix_path.sh'
+[1.171s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.171s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.180s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jprl/APS1/APS1/jota_ws1/src/rm_navigation' with build type 'ament_python'
+[1.182s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_navigation', 'ament_prefix_path')
+[1.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/hook/ament_prefix_path.ps1'
+[1.184s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/hook/ament_prefix_path.dsv'
+[1.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/hook/ament_prefix_path.sh'
+[1.186s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.186s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.194s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jprl/APS1/APS1/jota_ws1/src/rm_navigator' with build type 'ament_python'
+[1.195s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_navigator', 'ament_prefix_path')
+[1.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/rm_navigator/hook/ament_prefix_path.ps1'
+[1.198s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/rm_navigator/hook/ament_prefix_path.dsv'
+[1.199s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/rm_navigator/hook/ament_prefix_path.sh'
+[1.200s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.200s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.210s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jprl/APS1/APS1/jota_ws1/src/rm_slam' with build type 'ament_python'
+[1.211s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_slam', 'ament_prefix_path')
+[1.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/hook/ament_prefix_path.ps1'
+[1.213s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/hook/ament_prefix_path.dsv'
+[1.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/hook/ament_prefix_path.sh'
+[1.216s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.216s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.223s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jprl/APS1/APS1/jota_ws1/src/robot_description' with build type 'ament_cmake'
+[1.224s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jprl/APS1/APS1/jota_ws1/src/robot_description'
+[1.224s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.224s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.232s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jprl/APS1/APS1/jota_ws1/src/waypoint_navigation_pkg' with build type 'ament_python'
+[1.233s] Level 1:colcon.colcon_core.shell:create_environment_hook('waypoint_navigation_pkg', 'ament_prefix_path')
+[1.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/share/waypoint_navigation_pkg/hook/ament_prefix_path.ps1'
+[1.236s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/share/waypoint_navigation_pkg/hook/ament_prefix_path.dsv'
+[1.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/share/waypoint_navigation_pkg/hook/ament_prefix_path.sh'
+[1.239s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.239s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces -- -j12 -l12
+[1.666s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jprl/APS1/APS1/jota_ws1/src/rm_localization'
+[1.666s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.666s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.987s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jprl/APS1/APS1/jota_ws1/src/rm_navigation'
+[1.987s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.988s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.245s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jprl/APS1/APS1/jota_ws1/src/rm_navigator'
+[2.246s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.246s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.524s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jprl/APS1/APS1/jota_ws1/src/rm_slam'
+[2.524s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.524s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jprl/APS1/APS1/jota_ws1/build/robot_description -- -j12 -l12
+[2.802s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jprl/APS1/APS1/jota_ws1/src/waypoint_navigation_pkg'
+[2.803s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.803s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.822s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jprl/APS1/APS1/jota_ws1/build/robot_description -- -j12 -l12
+[2.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jprl/APS1/APS1/jota_ws1/build/robot_description
+[2.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces -- -j12 -l12
+[2.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces
+[2.940s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[2.942s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jprl/APS1/APS1/jota_ws1/build/robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jprl/APS1/APS1/jota_ws1/build/robot_description
+[2.957s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_description' for CMake module files
+[2.958s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_description' for CMake config files
+[2.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'cmake_prefix_path')
+[2.963s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/hook/cmake_prefix_path.ps1'
+[2.966s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/hook/cmake_prefix_path.dsv'
+[2.967s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/hook/cmake_prefix_path.sh'
+[2.969s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/bin'
+[2.969s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/lib/pkgconfig/robot_description.pc'
+[2.970s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/lib/python3.8/site-packages'
+[2.970s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/bin'
+[2.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.ps1'
+[2.978s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.dsv'
+[2.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.sh'
+[2.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.bash'
+[2.997s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.zsh'
+[3.006s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/colcon-core/packages/robot_description)
+[3.007s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[3.007s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_description' for CMake module files
+[3.008s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_description' for CMake config files
+[3.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'cmake_prefix_path')
+[3.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/hook/cmake_prefix_path.ps1'
+[3.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/hook/cmake_prefix_path.dsv'
+[3.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/hook/cmake_prefix_path.sh'
+[3.013s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/bin'
+[3.013s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/lib/pkgconfig/robot_description.pc'
+[3.014s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/lib/python3.8/site-packages'
+[3.014s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/bin'
+[3.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.ps1'
+[3.017s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.dsv'
+[3.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.sh'
+[3.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.bash'
+[3.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/robot_description/package.zsh'
+[3.022s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jprl/APS1/APS1/jota_ws1/install/robot_description/share/colcon-core/packages/robot_description)
+[3.025s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[3.025s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces' for CMake module files
+[3.027s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jprl/APS1/APS1/jota_ws1/build/custom_interfaces
+[3.029s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces' for CMake config files
+[3.030s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[3.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[3.031s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[3.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[3.033s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib'
+[3.034s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[3.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[3.036s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[3.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[3.039s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/bin'
+[3.040s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[3.041s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages'
+[3.041s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'pythonpath')
+[3.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/pythonpath.ps1'
+[3.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/pythonpath.dsv'
+[3.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/pythonpath.sh'
+[3.050s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/bin'
+[3.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[3.053s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[3.053s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/package.sh'
+[3.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/package.bash'
+[3.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[3.057s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[3.058s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[3.060s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces' for CMake module files
+[3.062s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces' for CMake config files
+[3.062s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[3.063s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[3.065s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[3.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[3.068s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib'
+[3.068s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[3.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[3.071s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[3.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[3.073s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/bin'
+[3.073s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[3.074s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages'
+[3.074s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'pythonpath')
+[3.075s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/pythonpath.ps1'
+[3.076s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/pythonpath.dsv'
+[3.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/hook/pythonpath.sh'
+[3.078s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/bin'
+[3.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[3.082s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[3.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/package.sh'
+[3.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/package.bash'
+[3.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[3.089s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[3.090s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jprl/APS1/APS1/jota_ws1/src/robot_navigation' with build type 'ament_python'
+[3.090s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_navigation', 'ament_prefix_path')
+[3.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/hook/ament_prefix_path.ps1'
+[3.095s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/hook/ament_prefix_path.dsv'
+[3.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/hook/ament_prefix_path.sh'
+[3.097s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.097s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.240s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jprl/APS1/APS1/jota_ws1/src/robot_navigation'
+[4.241s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.241s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.262s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jprl/APS1/APS1/jota_ws1/src/waypoint_navigation_pkg': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/waypoint_navigation_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/waypoint_navigation_pkg build --build-base /home/jprl/APS1/APS1/jota_ws1/build/waypoint_navigation_pkg/build install --record /home/jprl/APS1/APS1/jota_ws1/build/waypoint_navigation_pkg/install.log --install-scripts $base/lib/waypoint_navigation_pkg --single-version-externally-managed install_data
+[4.277s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_slam': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_slam build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_slam/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_slam/install.log --install-scripts $base/lib/rm_slam --single-version-externally-managed install_data
+[4.292s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_navigation': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_navigation build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_navigation/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_navigation/install.log --install-scripts $base/lib/rm_navigation --single-version-externally-managed install_data
+[4.302s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_localization': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_localization build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/install.log --install-scripts $base/lib/rm_localization --single-version-externally-managed install_data
+[4.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_navigator': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_navigator build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/install.log --install-scripts $base/lib/rm_navigator --single-version-externally-managed install_data
+[4.985s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam' for CMake module files
+[4.987s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_slam' returned '0': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_slam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_slam build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_slam/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_slam/install.log --install-scripts $base/lib/rm_slam --single-version-externally-managed install_data
+[4.988s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam' for CMake config files
+[4.990s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib'
+[4.990s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/bin'
+[4.990s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/pkgconfig/rm_slam.pc'
+[4.991s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/lib/python3.8/site-packages'
+[4.991s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_slam', 'pythonpath')
+[4.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/hook/pythonpath.ps1'
+[4.993s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/hook/pythonpath.dsv'
+[4.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/hook/pythonpath.sh'
+[4.996s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/bin'
+[4.996s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_slam)
+[4.997s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/package.ps1'
+[4.999s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/package.dsv'
+[5.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/package.sh'
+[5.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/package.bash'
+[5.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/rm_slam/package.zsh'
+[5.004s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jprl/APS1/APS1/jota_ws1/install/rm_slam/share/colcon-core/packages/rm_slam)
+[5.008s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg' for CMake module files
+[5.011s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jprl/APS1/APS1/jota_ws1/src/waypoint_navigation_pkg' returned '0': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/waypoint_navigation_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/waypoint_navigation_pkg build --build-base /home/jprl/APS1/APS1/jota_ws1/build/waypoint_navigation_pkg/build install --record /home/jprl/APS1/APS1/jota_ws1/build/waypoint_navigation_pkg/install.log --install-scripts $base/lib/waypoint_navigation_pkg --single-version-externally-managed install_data
+[5.012s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg' for CMake config files
+[5.013s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/lib'
+[5.013s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/bin'
+[5.013s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/lib/pkgconfig/waypoint_navigation_pkg.pc'
+[5.013s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/lib/python3.8/site-packages'
+[5.014s] Level 1:colcon.colcon_core.shell:create_environment_hook('waypoint_navigation_pkg', 'pythonpath')
+[5.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/share/waypoint_navigation_pkg/hook/pythonpath.ps1'
+[5.015s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/share/waypoint_navigation_pkg/hook/pythonpath.dsv'
+[5.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/share/waypoint_navigation_pkg/hook/pythonpath.sh'
+[5.017s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/bin'
+[5.017s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(waypoint_navigation_pkg)
+[5.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/share/waypoint_navigation_pkg/package.ps1'
+[5.019s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/share/waypoint_navigation_pkg/package.dsv'
+[5.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/share/waypoint_navigation_pkg/package.sh'
+[5.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/share/waypoint_navigation_pkg/package.bash'
+[5.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/share/waypoint_navigation_pkg/package.zsh'
+[5.025s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jprl/APS1/APS1/jota_ws1/install/waypoint_navigation_pkg/share/colcon-core/packages/waypoint_navigation_pkg)
+[5.030s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator' for CMake module files
+[5.031s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_navigator' returned '0': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_navigator build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_navigator/install.log --install-scripts $base/lib/rm_navigator --single-version-externally-managed install_data
+[5.032s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator' for CMake config files
+[5.032s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib'
+[5.033s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/bin'
+[5.033s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib/pkgconfig/rm_navigator.pc'
+[5.033s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/lib/python3.8/site-packages'
+[5.033s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_navigator', 'pythonpath')
+[5.033s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/rm_navigator/hook/pythonpath.ps1'
+[5.034s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/rm_navigator/hook/pythonpath.dsv'
+[5.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/rm_navigator/hook/pythonpath.sh'
+[5.037s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/bin'
+[5.037s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_navigator)
+[5.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/rm_navigator/package.ps1'
+[5.039s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/rm_navigator/package.dsv'
+[5.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/rm_navigator/package.sh'
+[5.041s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/rm_navigator/package.bash'
+[5.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/rm_navigator/package.zsh'
+[5.044s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jprl/APS1/APS1/jota_ws1/install/rm_navigator/share/colcon-core/packages/rm_navigator)
+[5.045s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation' for CMake module files
+[5.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_navigation' returned '0': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_navigation build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_navigation/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_navigation/install.log --install-scripts $base/lib/rm_navigation --single-version-externally-managed install_data
+[5.050s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation' for CMake config files
+[5.052s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib'
+[5.052s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/bin'
+[5.053s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/pkgconfig/rm_navigation.pc'
+[5.053s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/lib/python3.8/site-packages'
+[5.053s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_navigation', 'pythonpath')
+[5.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/hook/pythonpath.ps1'
+[5.055s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/hook/pythonpath.dsv'
+[5.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/hook/pythonpath.sh'
+[5.058s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/bin'
+[5.058s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_navigation)
+[5.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/package.ps1'
+[5.062s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/package.dsv'
+[5.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/package.sh'
+[5.066s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/package.bash'
+[5.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/rm_navigation/package.zsh'
+[5.070s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jprl/APS1/APS1/jota_ws1/install/rm_navigation/share/colcon-core/packages/rm_navigation)
+[5.072s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization' for CMake module files
+[5.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jprl/APS1/APS1/jota_ws1/src/rm_localization' returned '0': PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/rm_localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rm_localization build --build-base /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/build install --record /home/jprl/APS1/APS1/jota_ws1/build/rm_localization/install.log --install-scripts $base/lib/rm_localization --single-version-externally-managed install_data
+[5.077s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization' for CMake config files
+[5.078s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib'
+[5.079s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/bin'
+[5.079s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/pkgconfig/rm_localization.pc'
+[5.080s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/lib/python3.8/site-packages'
+[5.080s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_localization', 'pythonpath')
+[5.081s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/hook/pythonpath.ps1'
+[5.086s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/hook/pythonpath.dsv'
+[5.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/hook/pythonpath.sh'
+[5.090s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/bin'
+[5.090s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_localization)
+[5.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/package.ps1'
+[5.093s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/package.dsv'
+[5.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/package.sh'
+[5.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/package.bash'
+[5.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/rm_localization/package.zsh'
+[5.099s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jprl/APS1/APS1/jota_ws1/install/rm_localization/share/colcon-core/packages/rm_localization)
+[5.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jprl/APS1/APS1/jota_ws1/src/robot_navigation': AMENT_PREFIX_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces LD_LIBRARY_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_navigation build --build-base /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build install --record /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/install.log --install-scripts $base/lib/robot_navigation --single-version-externally-managed install_data
+[6.305s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation' for CMake module files
+[6.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jprl/APS1/APS1/jota_ws1/src/robot_navigation' returned '0': AMENT_PREFIX_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces LD_LIBRARY_PATH=/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages:/home/jprl/APS1/APS1/jota_ws1/install/custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_navigation build --build-base /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/build install --record /home/jprl/APS1/APS1/jota_ws1/build/robot_navigation/install.log --install-scripts $base/lib/robot_navigation --single-version-externally-managed install_data
+[6.306s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation' for CMake config files
+[6.308s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib'
+[6.308s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/bin'
+[6.308s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/pkgconfig/robot_navigation.pc'
+[6.308s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/lib/python3.8/site-packages'
+[6.308s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_navigation', 'pythonpath')
+[6.309s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/hook/pythonpath.ps1'
+[6.310s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/hook/pythonpath.dsv'
+[6.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/hook/pythonpath.sh'
+[6.313s] Level 1:colcon.colcon_core.environment:checking '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/bin'
+[6.313s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_navigation)
+[6.314s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/package.ps1'
+[6.316s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/package.dsv'
+[6.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/package.sh'
+[6.319s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/package.bash'
+[6.320s] INFO:colcon.colcon_core.shell:Creating package script '/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/robot_navigation/package.zsh'
+[6.321s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jprl/APS1/APS1/jota_ws1/install/robot_navigation/share/colcon-core/packages/robot_navigation)
+[6.322s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.323s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.323s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.324s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.447s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[6.447s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.448s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.448s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.507s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[6.507s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.508s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jprl/APS1/APS1/jota_ws1/install/local_setup.ps1'
+[6.512s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jprl/APS1/APS1/jota_ws1/install/_local_setup_util_ps1.py'
+[6.515s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jprl/APS1/APS1/jota_ws1/install/setup.ps1'
+[6.517s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jprl/APS1/APS1/jota_ws1/install/local_setup.sh'
+[6.518s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jprl/APS1/APS1/jota_ws1/install/_local_setup_util_sh.py'
+[6.519s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jprl/APS1/APS1/jota_ws1/install/setup.sh'
+[6.522s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jprl/APS1/APS1/jota_ws1/install/local_setup.bash'
+[6.524s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jprl/APS1/APS1/jota_ws1/install/setup.bash'
+[6.525s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jprl/APS1/APS1/jota_ws1/install/local_setup.zsh'
+[6.527s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jprl/APS1/APS1/jota_ws1/install/setup.zsh'

@@ -47,13 +47,10 @@ def generate_launch_description():
     # Remappings para TF - importante para Nav2
     remappings = [('/tf', 'tf'), ('/tf_static', 'tf_static')]
     
-    # Definir nós do lifecycle manager - IMPORTANTE: map_server e amcl separados
-    # para poder iniciar o localization independentemente da navegação
     loc_lifecycle_nodes = ['map_server', 'amcl']
     nav_lifecycle_nodes = ['controller_server', 'planner_server', 
                           'recoveries_server', 'bt_navigator', 'waypoint_follower']
     
-    # Create our own temporary YAML files that include substitutions - CRÍTICO PARA O NAV2
     param_substitutions = {
         'use_sim_time': use_sim_time,
         'default_bt_xml_filename': default_bt_xml_filename,

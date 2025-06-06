@@ -1,1 +1,0 @@
-print("Arquivo montado com sucesso!")
