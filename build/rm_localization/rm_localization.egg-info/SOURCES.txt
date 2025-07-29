@@ -12,6 +12,7 @@ config/amcl_params.yaml
 config/ekf_config.yaml
 launch/amcl.launch.py
 launch/ekf.launch.py
+launch/localization.launch.py
 map/map.pgm
 map/map.yaml
 resource/rm_localization
